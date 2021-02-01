@@ -1,0 +1,22 @@
+** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+** Creating circuit file "Parametric.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab4-pspicefiles/lab4.lib" 
+.STMLIB "../../../lab4-PSpiceFiles/LAB4.stl" 
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 11 10 100Meg
+.STEP DEC PARAM R1Val 100 10k 10 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

@@ -1,0 +1,24 @@
+# Reading pref.tcl
+# do sim.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:34:55 on Jan 03,2021
+# vlog -reportprogress 300 pwm_control_period.v pwm_control_period_tb.v 
+# -- Compiling module pwm_control_period
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:34:55 on Jan 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench 
+# Start time: 12:34:55 on Jan 03,2021
+# Loading work.testbench
+# Loading work.pwm_control_period
+# ** Note: $finish    : pwm_control_period_tb.v(45)
+#    Time: 139776320 ns  Iteration: 1  Instance: /testbench
+# 1
+# Break in Module testbench at pwm_control_period_tb.v line 45
+# 0 ps
+# 146765136 ns
+# End time: 12:42:37 on Jan 03,2021, Elapsed time: 0:07:42
+# Errors: 0, Warnings: 0

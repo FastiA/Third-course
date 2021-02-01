@@ -1,0 +1,13 @@
+* D:\Orcad\lab3\sin.stl written on Wed Oct 28 10:37:42 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! SIN Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 3ms
+;!Yrange -10 10
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS SIN SIN( 0 10 1K 0 0 0 )

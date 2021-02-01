@@ -1,0 +1,66 @@
+
+**** 11/24/20 14:14:36 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-ACsweep"  [ D:\Orcad\lab3\zavd2\zavd2-PSpiceFiles\SCHEMATIC1\ACsweep.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ACsweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../zavd2-PSpiceFiles/ZAVD2.stl" 
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 11 10 0.001G
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ZAVD2
+C_C1         0 OUT  1n  TC=0,0 
+R_R1         IN OUT  1k TC=0,0 
+V_V2         N00316 0   STIMULUS=SIN
+R_R2         IN N00515  {2*ValR4} TC=0,0 
+R_R3         N00515 OUT  {2*ValR4} TC=0,0 
+C_C2         IN N00572  {0.5*ValC4}  TC=0,0 
+C_C3         N00572 OUT  {0.5*ValC4}  TC=0,0 
+R_R4         0 N00572  {ValR4} TC=0,0 
+C_C4         0 N00515  {ValC4}  TC=0,0 
+V_V3         IN 0 DC 0Vdc AC 1V 
+R_Rn         0 OUT  1k TC=0,0 
+V_V4         IN N00316 DC 0Vdc AC 1V 
+.PARAM  valr4=10k valc4=10n
+
+**** RESUMING ACsweep.cir ****
+.END
+* D:\Orcad\lab3\zavd2\zavd2-PSpiceFiles\ZAVD2.stl written on Tue Nov 24 13:23:21 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! SIN Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 3ms
+;!Yrange -10 10
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS SIN SIN( 0 10 1KHz 0 0 0 )
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_V4. You may break the loop by adding a series resistance
+

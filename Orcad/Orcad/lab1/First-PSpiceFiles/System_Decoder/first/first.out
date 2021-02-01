@@ -1,0 +1,590 @@
+
+**** 09/23/20 12:45:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "System_Decoder-first"  [ D:\Orcad\lab1\first-pspicefiles\system_decoder\first.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "first.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.INC "../../../text1.inc" 
+
+**** INCLUDING text1.inc ****
+.PARAM Val=210
+.PARAM Vali=1130pF
+
+**** RESUMING first.cir ****
+.STMLIB "D:/Orcad/signals/reset.stl" 
+.STMLIB "../../../first-pspicefiles/first.stl" 
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN/OP  0 10us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\System_Decoder.net" 
+
+
+
+**** INCLUDING System_Decoder.net ****
+* source FIRST
+X_U1         N03711 N03711 HEEL N00470 N00432 N00444 OUT1 OUT2 OUT3 OUT4 OUT5
++  OUT6 OUT7 OUT8 OUT9 OUT10 OUT11 OUT12 OUT13 OUT14 OUT15 OUT16 $G_DPWR $G_DGND
++  74154 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2         N03656 HEEL N03711 N03711 HEEL N00470 N00432 N00444 $G_DPWR
++  $G_DGND 7493A PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_B1_B1U1         N03656 M_UN0001 N03711 N03711 FCLK2 M_UN0002 M_UN0003
++  M_UN0004 $G_DPWR $G_DGND 7493A PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_B1_B1U2A         N03711 B1_N00450 $G_DPWR $G_DGND 7405 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_B1_B1U3A         B1_N00450 B1_N00460 $G_DPWR $G_DGND 7414 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_B1_B1U3B         B1_N00460 B1_N00464 $G_DPWR $G_DGND 7414 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_B1_B1U3C         B1_N00464 N03656 $G_DPWR $G_DGND 7414 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+C_B1_B1C1         B1_N00450 B1_N00464  {Vali}  TC=0,0 
+R_B1_B1R1         B1_N00450 B1_N00460  {Val} TC=0,0 
+U_DSTM1         STIM(1,0) $G_DPWR $G_DGND N03711 IO_STM STIMULUS=Reset
+
+**** RESUMING first.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node B1_N00450
+*
+* Moving X_B1_B1U3A.U1:IN1 from analog node B1_N00450 to new digital node B1_N00450$AtoD
+X$B1_N00450_AtoD1
++ B1_N00450
++ B1_N00450$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD_ST
++       PARAMS: CAPACITANCE=   0     
+* Moving X_B1_B1U2A.U1:OUT1 from analog node B1_N00450 to new digital node B1_N00450$DtoA
+X$B1_N00450_DtoA1
++ B1_N00450$DtoA
++ B1_N00450
++ $G_DPWR
++ $G_DGND
++ DtoA_STD_OC
++       PARAMS: DRVH=   1.0000E+06 DRVL= 104    CAPACITANCE=   0     
+*
+* Analog/Digital interface for node B1_N00464
+*
+* Moving X_B1_B1U3C.U1:IN1 from analog node B1_N00464 to new digital node B1_N00464$AtoD
+X$B1_N00464_AtoD1
++ B1_N00464
++ B1_N00464$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD_ST
++       PARAMS: CAPACITANCE=   0     
+* Moving X_B1_B1U3B.U1:OUT1 from analog node B1_N00464 to new digital node B1_N00464$DtoA
+X$B1_N00464_DtoA1
++ B1_N00464$DtoA
++ B1_N00464
++ $G_DPWR
++ $G_DGND
++ DtoA_STD
++       PARAMS: DRVH=  96.4   DRVL= 104    CAPACITANCE=   0     
+*
+* Analog/Digital interface for node B1_N00460
+*
+* Moving X_B1_B1U3B.U1:IN1 from analog node B1_N00460 to new digital node B1_N00460$AtoD
+X$B1_N00460_AtoD1
++ B1_N00460
++ B1_N00460$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD_ST
++       PARAMS: CAPACITANCE=   0     
+* Moving X_B1_B1U3A.U1:OUT1 from analog node B1_N00460 to new digital node B1_N00460$DtoA
+X$B1_N00460_DtoA1
++ B1_N00460$DtoA
++ B1_N00460
++ $G_DPWR
++ $G_DGND
++ DtoA_STD
++       PARAMS: DRVH=  96.4   DRVL= 104    CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$DIGIFPWR 0 DIGIFPWR
+
+
+* C:\Users\bohda\Desktop\Signals\Reset.stl written on Tue Feb 18 13:38:39 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! Reset Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 1us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Reset STIM (1, 1)
++   +0s 0
++   1fs 1
++   100.000001ns 0
+
+**** 09/23/20 12:45:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "System_Decoder-first"  [ D:\Orcad\lab1\first-pspicefiles\system_decoder\first.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D74CLMP         D74             
+          IS    1.000000E-15  100.000000E-18 
+          RS    2              25            
+         CJO    2.000000E-12    2.000000E-12 
+
+
+**** 09/23/20 12:45:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "System_Decoder-first"  [ D:\Orcad\lab1\first-pspicefiles\system_decoder\first.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q74             
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF   49            
+          NF    1            
+         ISE  100.000000E-18 
+          BR     .03         
+          NR    1            
+         ISC  400.000000E-18 
+         ISS    0            
+          RB   50            
+          RE    0            
+          RC   20            
+         CJE    1.000000E-12 
+         VJE     .9          
+         MJE     .5          
+         CJC  500.000000E-15 
+         VJC     .8          
+         MJC     .33         
+        XCJC    1            
+         CJS    3.000000E-12 
+         VJS     .7          
+         MJS     .33         
+          TF  200.000000E-12 
+          TR   10.000000E-09 
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 09/23/20 12:45:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "System_Decoder-first"  [ D:\Orcad\lab1\first-pspicefiles\system_decoder\first.sim ] 
+
+
+ ****     Digital Input MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DIN74_OC        DIN74           
+      S0NAME 0               0               
+       S0TSW    3.500000E-09    3.500000E-09 
+       S0RLO    7.13            7.13         
+       S0RHI  389             389            
+      S1NAME 1               1               
+       S1TSW    5.500000E-09    5.500000E-09 
+       S1RLO  200.000000E+03  467            
+       S1RHI  200.000000E+03  200            
+      S2NAME X               X               
+       S2TSW    3.500000E-09    3.500000E-09 
+       S2RLO   42.9            42.9          
+       S2RHI  116             116            
+      S3NAME R               R               
+       S3TSW    3.500000E-09    3.500000E-09 
+       S3RLO   42.9            42.9          
+       S3RHI  116             116            
+      S4NAME F               F               
+       S4TSW    3.500000E-09    3.500000E-09 
+       S4RLO   42.9            42.9          
+       S4RHI  116             116            
+      S5NAME Z               Z               
+       S5TSW    5.500000E-09    3.500000E-09 
+       S5RLO  200.000000E+03  200.000000E+03 
+       S5RHI  200.000000E+03  200.000000E+03 
+
+
+**** 09/23/20 12:45:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "System_Decoder-first"  [ D:\Orcad\lab1\first-pspicefiles\system_decoder\first.sim ] 
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO74_ST         
+    TIMESTEP  100.000000E-12 
+      S0NAME 0               
+       S0VHI    1.7          
+       S0VLO   -1.5          
+      S1NAME 1               
+       S1VHI    7            
+       S1VLO     .9          
+
+
+**** 09/23/20 12:45:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "System_Decoder-first"  [ D:\Orcad\lab1\first-pspicefiles\system_decoder\first.sim ] 
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D0_GATE         D_05            D_14            
+      TPLHMN    0              16.000000E-09    6.000000E-09 
+      TPLHTY    0              40.000000E-09   15.000000E-09 
+      TPLHMX    0              55.000000E-09   22.000000E-09 
+      TPHLMN    0               3.200000E-09    6.000000E-09 
+      TPHLTY    0               8.000000E-09   15.000000E-09 
+      TPHLMX    0              15.000000E-09   22.000000E-09 
+
+
+**** 09/23/20 12:45:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "System_Decoder-first"  [ D:\Orcad\lab1\first-pspicefiles\system_decoder\first.sim ] 
+
+
+ ****     Digital Edge Triggered FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D0_EFF          
+  TPCLKQLHMN    0            
+  TPCLKQLHTY    0            
+  TPCLKQLHMX    0            
+  TPCLKQHLMN    0            
+  TPCLKQHLTY    0            
+  TPCLKQHLMX    0            
+   TPPCQLHMN    0            
+   TPPCQLHTY    0            
+   TPPCQLHMX    0            
+   TPPCQHLMN    0            
+   TPPCQHLTY    0            
+   TPPCQHLMX    0            
+    TWCLKLMN    0            
+    TWCLKLTY    0            
+    TWCLKLMX    0            
+    TWCLKHMN    0            
+    TWCLKHTY    0            
+    TWCLKHMX    0            
+     TWPCLMN    0            
+     TWPCLTY    0            
+     TWPCLMX    0            
+   TSUDCLKMN    0            
+   TSUDCLKTY    0            
+   TSUDCLKMX    0            
+ TSUPCCLKHMN    0            
+ TSUPCCLKHTY    0            
+ TSUPCCLKHMX    0            
+    THDCLKMN    0            
+    THDCLKTY    0            
+    THDCLKMX    0            
+  TSUCECLKMN    0            
+  TSUCECLKTY    0            
+  TSUCECLKMX    0            
+   THCECLKMN    0            
+   THCECLKTY    0            
+   THCECLKMX    0            
+
+
+**** 09/23/20 12:45:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "System_Decoder-first"  [ D:\Orcad\lab1\first-pspicefiles\system_decoder\first.sim ] 
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_STD          IO_STD_OC       IO_STD_ST       
+        DRVL    0             104             104             104            
+        DRVH    0              96.4             1.000000E+06   96.4          
+       AtoD1                 AtoD_STD        AtoD_STD        AtoD_STD_ST     
+       AtoD2                 AtoD_STD_NX     AtoD_STD_NX     AtoD_STD_ST     
+       AtoD3                 AtoD_STD        AtoD_STD        AtoD_STD_ST     
+       AtoD4                 AtoD_STD_NX     AtoD_STD_NX     AtoD_STD_ST     
+       DtoA1 DtoA_STM        DtoA_STD        DtoA_STD_OC     DtoA_STD        
+       DtoA2 DtoA_STM        DtoA_STD        DtoA_STD_OC     DtoA_STD        
+       DtoA3 DtoA_STM        DtoA_STD        DtoA_STD_OC     DtoA_STD        
+       DtoA4 DtoA_STM        DtoA_STD        DtoA_STD_OC     DtoA_STD        
+      TSWHL1                    1.511000E-09    2.747000E-09    1.511000E-09 
+      TSWHL2                    1.487000E-09    2.732000E-09    1.487000E-09 
+      TSWHL3                    1.511000E-09    2.747000E-09    1.511000E-09 
+      TSWHL4                    1.487000E-09    2.732000E-09    1.487000E-09 
+      TSWLH1                    3.517000E-09    1.589000E-09    3.517000E-09 
+      TSWLH2                    3.564000E-09    1.615000E-09    3.564000E-09 
+      TSWLH3                    3.517000E-09    1.589000E-09    3.517000E-09 
+      TSWLH4                    3.564000E-09    1.615000E-09    3.564000E-09 
+       TPWRT  100.000000E+03  100.000000E+03  100.000000E+03  100.000000E+03 
+
+
+**** 09/23/20 12:45:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "System_Decoder-first"  [ D:\Orcad\lab1\first-pspicefiles\system_decoder\first.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($G_DGND)    0.0000                   ($G_DPWR)    5.0000                       
+
+(B1_N00450)     .1637                 (B1_N00460)    2.1641                     
+
+(B1_N00464)     .0971                 (X$B1_N00450_AtoD1.1)     .2552           
+
+(X$B1_N00450_AtoD1.2)     .1276       (X$B1_N00450_AtoD1.3)     .9884           
+
+(X$B1_N00460_AtoD1.1)    1.5648       (X$B1_N00460_AtoD1.2)     .7824           
+
+(X$B1_N00460_AtoD1.3)    2.2862       (X$B1_N00464_AtoD1.1)     .1886           
+
+(X$B1_N00464_AtoD1.2)     .0943       (X$B1_N00464_AtoD1.3)     .9230       
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+( X_U1.Y9) : 1     (    OUT1) : 1     (X_B1_B1U1.CKB) : X                       
+
+(B1_N00450$DtoA) : 0                  (X_U2.CKA) : 1     (M_UN0003) : 0         
+
+(B1_N00464$DtoA) : 0                  (   OUT10) : 1     (X_U2.R02) : 1         
+
+( X_U2.QC) : 0     (   OUT15) : 1     (  N03711) : 1     (X_B1_B1U1.QA) : 0     
+
+(   OUT16) : 1     (X_U1.Y14) : 1     (X_B1_B1U1.QB) : 0                        
+
+( X_U1.Y7) : 1     (B1_N00460$DtoA) : 1                  (X_U1.Y11) : 1         
+
+( X_U1.Y0) : 1     (B1_N00450$AtoD) : 0                  (X_U1.Y12) : 1         
+
+(    OUT8) : 1     (   $D_HI) : 1     (B1_N00464$AtoD) : 0                      
+
+(    OUT5) : 1     (  X_U1.C) : 0     (  N00444) : 0     (    OUT2) : 1         
+
+(  X_U1.D) : 0     (X_U2.CKB) : 0     (M_UN0004) : 0     (   OUT11) : 1         
+
+(B1_N00460$AtoD) : 1                  (M_UN0001) : Z     (   OUT12) : 1         
+
+(X_U2.CLRBAR) : 0  (X_B1_B1U1.CLRBAR) : 0                (X_U1.Y15) : 1         
+
+(X_B1_B1U1.QC) : 0                    ( X_U1.Y4) : 1     (X_B1_B1U1.QD) : 0     
+
+(X_B1_B1U1.R01) : 1                   ( X_U1.Y1) : 1     (X_U1.Y13) : 1         
+
+(    OUT9) : 1     (X_B1_B1U1.R02) : 1                   ( X_U1.Y2) : 1         
+
+(   $D_NC) : Z     (  N00470) : 0     (    OUT6) : 1     (    OUT3) : 1         
+
+(   FCLK2) : 0     ( X_U1.Y8) : 1     (  N00432) : 0     ( X_U2.QD) : 0         
+
+(M_UN0002) : 0     ( X_U2.QA) : 0     (   OUT13) : 1     (X_U2.R01) : 1         
+
+( X_U2.QB) : 0     (   OUT14) : 1     ( X_U1.Y5) : 1     ( X_U1.Y6) : 1         
+
+(X_U1.Y10) : 1     (  N03656) : 1     ( X_U1.Y3) : 1     (    HEEL) : 0         
+
+(    OUT7) : 1     (  X_U1.A) : 0     (X_U1.ENABLE) : 0  (X_B1_B1U1.CKA) : 1    
+
+(    OUT4) : 1     (  X_U1.B) : 0     
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    X$DIGIFPWR.VDPWR  -4.192E-02
+    X$DIGIFPWR.VDGND  -5.000E-06
+
+    TOTAL POWER DISSIPATION   2.10E-01  WATTS
+
+
+**** 09/23/20 12:45:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "System_Decoder-first"  [ D:\Orcad\lab1\first-pspicefiles\system_decoder\first.sim ] 
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** DIODES
+
+
+NAME         X$B1_N00450_AtoD1.D0    X$B1_N00450_AtoD1.D1  
+MODEL        D74CLMP                 D74                   
+ID          -1.65E-13                1.41E-13             
+VD          -1.64E-01                1.28E-01             
+REQ          1.00E+12                6.51E+11             
+CAP          1.85E-12                2.14E-12             
+
+NAME         X$B1_N00450_AtoD1.D2    X$B1_N00464_AtoD1.D0  
+MODEL        D74                     D74CLMP               
+ID           1.41E-13               -9.81E-14             
+VD           1.28E-01               -9.71E-02             
+REQ          6.51E+11                9.99E+11             
+CAP          2.14E-12                1.91E-12             
+
+NAME         X$B1_N00464_AtoD1.D1    X$B1_N00464_AtoD1.D2  
+MODEL        D74                     D74                   
+ID           9.80E-14                9.80E-14             
+VD           9.43E-02                9.43E-02             
+REQ          8.71E+11                8.71E+11             
+CAP          2.10E-12                2.10E-12             
+
+NAME         X$B1_N00460_AtoD1.D0    X$B1_N00460_AtoD1.D1  
+MODEL        D74CLMP                 D74                   
+ID          -2.17E-12                6.99E-04             
+VD          -2.16E+00                7.82E-01             
+REQ          1.00E+12                3.70E+01             
+CAP          1.12E-12                3.58E-12             
+
+NAME         X$B1_N00460_AtoD1.D2  
+MODEL        D74                   
+ID           6.99E-04             
+VD           7.82E-01             
+REQ          3.70E+01             
+CAP          3.58E-12             
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         X$B1_N00450_AtoD1.Q1    X$B1_N00464_AtoD1.Q1  
+MODEL        Q74                     Q74                   
+IB           1.00E-03                1.02E-03             
+IC          -1.41E-13               -9.80E-14             
+VBE          8.25E-01                8.26E-01             
+VBC          7.33E-01                7.34E-01             
+VCE          9.15E-02                9.15E-02             
+BETADC      -1.41E-10               -9.62E-11             
+GM           3.80E-02                3.86E-02             
+RPI          1.25E+03                1.23E+03             
+RX           5.00E+01                5.00E+01             
+RO           8.78E+02                8.64E+02             
+CBE          9.75E-12                9.88E-12             
+CBC          1.22E-11                1.24E-11             
+CJS          2.71E-12                2.77E-12             
+BETAAC       4.75E+01                4.75E+01             
+CBX/CBX2     0.00E+00                0.00E+00             
+FT/FT2       2.76E+08                2.76E+08             
+
+
+
+NAME         X$B1_N00460_AtoD1.Q1  
+MODEL        Q74                   
+IB           6.78E-04             
+IC          -6.99E-04             
+VBE          1.22E-01             
+VBC          7.21E-01             
+VCE         -5.99E-01             
+BETADC      -1.03E+00             
+GM          -7.87E-04             
+RPI          2.09E+13             
+RX           5.00E+01             
+RO           1.27E+03             
+CBE          1.05E-12             
+CBC          8.64E-12             
+CJS          2.03E-12             
+BETAAC      -1.64E+10             
+CBX/CBX2     0.00E+00             
+FT/FT2      -1.29E+07             
+
+
+
+          JOB CONCLUDED
+
+**** 09/23/20 12:45:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "System_Decoder-first"  [ D:\Orcad\lab1\first-pspicefiles\system_decoder\first.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .24
+

@@ -1,0 +1,81 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+vExclusiveOR
+Z0 !s110 1603971285
+!i10b 1
+!s100 H4;2D3KC3_0;?G`E^F3gX2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IadB_T`G2m2dK6^XbKm>g@0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/Modelsim/lab2
+w1603971282
+8D:\Modelsim\lab2\ExclusiveOR.v
+FD:\Modelsim\lab2\ExclusiveOR.v
+!i122 26
+L0 1 13
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1603971285.000000
+!s107 D:\Modelsim\lab2\ExclusiveOR.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\Modelsim\lab2\ExclusiveOR.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@exclusive@o@r
+vwork
+R0
+!i10b 1
+!s100 K=]Gdfo2[]lH8hkejIjGj3
+R1
+Ij2X[S3];j]HIhY]jgAY^?3
+R2
+R3
+w1601561336
+8D:\Modelsim\lab2\var5.v
+FD:\Modelsim\lab2\var5.v
+!i122 27
+L0 1 8
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:\Modelsim\lab2\var5.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\Modelsim\lab2\var5.v|
+!i113 1
+R6
+R7
+vwork1
+R0
+!i10b 1
+!s100 g8QRI`eHm7mb3@C`>@2RD1
+R1
+Il2=_Bo0dEz;8=lCA_E]Rb3
+R2
+R3
+w1601559067
+8D:/Modelsim/lab2/var52.v
+FD:/Modelsim/lab2/var52.v
+!i122 28
+L0 1 9
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Modelsim/lab2/var52.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Modelsim/lab2/var52.v|
+!i113 1
+R6
+R7

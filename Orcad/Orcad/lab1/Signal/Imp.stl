@@ -1,0 +1,14 @@
+* C:\Users\bohda\Desktop\Signals\Imp.stl written on Tue Feb 18 13:16:51 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! Im Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 400ns
+;!Yrange 0 2
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Im PULSE( 100m 2 2ns 10ns 5ns 40ns 100ns )
+.STIMULUS ex EXP( 0 2 2ms 20ms 40ms 20ms )

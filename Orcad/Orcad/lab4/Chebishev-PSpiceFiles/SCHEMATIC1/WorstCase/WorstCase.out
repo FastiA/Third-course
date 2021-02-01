@@ -1,0 +1,1361 @@
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "WorstCase.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../chebishev-pspicefiles/chebishev.lib" 
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 50 100 1Meg
+.WCASE AC V([OUT]) YMAX  OUTPUT ALL VARY DEV  HI DEVICES RC 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CHEBISHEV
+V_V1         V- 0 DC -15V  
+V_V2         V+ 0 DC +15V  
+V_V3         N00371 0  AC 1V 
+R_R1         N00371 N00403 RMOD 6.34k
+R_R2         0 N00403 RMOD 93.1
+R_R3         N00729 N00652 RMOD 18.2k
+R_R4         N00884 N00729 RMOD 6.34k
+R_R5         N00884 0 RMOD 110
+R_R6         N00933 OUT RMOD 22.1k
+C_C1         N00403 N00652 CMOD 10n 
+C_C2         N00884 N00933 CMOD 10n 
+C_C3         N00403 N00729 CMOD 10n 
+C_C4         N00884 OUT CMOD 10n 
+X_U1A         0 N00652 V+ V- N00729 LT1013/LT
+X_U1B         0 N00933 V+ V- OUT LT1013/LT
+
+**** RESUMING WorstCase.cir ****
+.END
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.X_LT1013.DX 
+          IS  800.000000E-18 
+
+
+               X_U1B.X_LT1013.DX 
+          IS  800.000000E-18 
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.X_LT1013.QM1 
+               PNP             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF  397.4          
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.2          
+           D     .52         
+
+
+               X_U1A.X_LT1013.QM2 
+               PNP             
+       LEVEL    1            
+          IS  801.900000E-18 
+          BF  402.7          
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.2          
+           D     .52         
+
+
+               X_U1B.X_LT1013.QM1 
+               PNP             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF  397.4          
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.2          
+           D     .52         
+
+
+               X_U1B.X_LT1013.QM2 
+               PNP             
+       LEVEL    1            
+          IS  801.900000E-18 
+          BF  402.7          
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.2          
+           D     .52         
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               RMOD            
+           R    1            
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     Capacitor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               CMOD            
+           C    1            
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY NOMINAL
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (  OUT)-395.6E-06  (N00371)    0.0000     
+
+(N00403)    0.0000 (N00652)-63.57E-06 (N00729)-337.0E-06 (N00884)-5.747E-06     
+
+(N00933)-63.57E-06 (X_U1A.X_LT1013.6)-80.19E-09                                 
+
+(X_U1A.X_LT1013.7)-342.4E-06          (X_U1A.X_LT1013.8)-342.4E-06              
+
+(X_U1A.X_LT1013.9)    0.0000          (X_U1B.X_LT1013.6)-80.10E-09              
+
+(X_U1B.X_LT1013.7)-396.8E-06          (X_U1B.X_LT1013.8)-396.8E-06              
+
+(X_U1B.X_LT1013.9)    0.0000          (X_U1A.X_LT1013.10)     .6151             
+
+(X_U1A.X_LT1013.11)  -14.9470         (X_U1A.X_LT1013.12)  -14.9470             
+
+(X_U1A.X_LT1013.13)     .5880         (X_U1A.X_LT1013.14)     .5880             
+
+(X_U1A.X_LT1013.53)   13.3900         (X_U1A.X_LT1013.54)  -14.3900             
+
+(X_U1A.X_LT1013.90)-67.27E-06         (X_U1A.X_LT1013.91)   25.0000             
+
+(X_U1A.X_LT1013.92)  -25.0000         (X_U1A.X_LT1013.99)    0.0000             
+
+(X_U1B.X_LT1013.10)     .6151         (X_U1B.X_LT1013.11)  -14.9470             
+
+(X_U1B.X_LT1013.12)  -14.9470         (X_U1B.X_LT1013.13)     .5880             
+
+(X_U1B.X_LT1013.14)     .5880         (X_U1B.X_LT1013.53)   13.3900             
+
+(X_U1B.X_LT1013.54)  -14.3900         (X_U1B.X_LT1013.90)-15.02E-06             
+
+(X_U1B.X_LT1013.91)   25.0000         (X_U1B.X_LT1013.92)  -25.0000             
+
+(X_U1B.X_LT1013.99)    0.0000         (X_U1A.X_LT1013.101) 5.930E-06            
+
+(X_U1A.X_LT1013.102)-57.56E-06        (X_U1A.X_LT1013.105)  -14.6000            
+
+(X_U1B.X_LT1013.101) 5.930E-06        (X_U1B.X_LT1013.102)-57.56E-06            
+
+(X_U1B.X_LT1013.105)  -14.6000        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         6.799E-04
+    V_V2        -6.801E-04
+    V_V3         0.000E+00
+    X_U1A.X_LT1013.VCMC   2.920E-11
+    X_U1A.X_LT1013.VB  -8.019E-13
+    X_U1A.X_LT1013.VC   1.339E-11
+    X_U1A.X_LT1013.VE   1.439E-11
+    X_U1A.X_LT1013.VLIM  -6.727E-08
+    X_U1A.X_LT1013.VLP  -2.500E-11
+    X_U1A.X_LT1013.VLN  -2.500E-11
+    X_U1B.X_LT1013.VCMC   2.920E-11
+    X_U1B.X_LT1013.VB  -8.010E-13
+    X_U1B.X_LT1013.VC   1.339E-11
+    X_U1B.X_LT1013.VE   1.439E-11
+    X_U1B.X_LT1013.VLIM  -1.502E-08
+    X_U1B.X_LT1013.VLP  -2.500E-11
+    X_U1B.X_LT1013.VLN  -2.500E-11
+
+    TOTAL POWER DISSIPATION   2.04E-02  WATTS
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY C_C1 CMOD C
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (  OUT)-395.6E-06  (N00371)    0.0000     
+
+(N00403)    0.0000 (N00652)-63.57E-06 (N00729)-337.0E-06 (N00884)-5.747E-06     
+
+(N00933)-63.57E-06 (X_U1A.X_LT1013.6)-80.19E-09                                 
+
+(X_U1A.X_LT1013.7)-342.4E-06          (X_U1A.X_LT1013.8)-342.4E-06              
+
+(X_U1A.X_LT1013.9)    0.0000          (X_U1B.X_LT1013.6)-80.10E-09              
+
+(X_U1B.X_LT1013.7)-396.8E-06          (X_U1B.X_LT1013.8)-396.8E-06              
+
+(X_U1B.X_LT1013.9)    0.0000          (X_U1A.X_LT1013.10)     .6151             
+
+(X_U1A.X_LT1013.11)  -14.9470         (X_U1A.X_LT1013.12)  -14.9470             
+
+(X_U1A.X_LT1013.13)     .5880         (X_U1A.X_LT1013.14)     .5880             
+
+(X_U1A.X_LT1013.53)   13.3900         (X_U1A.X_LT1013.54)  -14.3900             
+
+(X_U1A.X_LT1013.90)-67.27E-06         (X_U1A.X_LT1013.91)   25.0000             
+
+(X_U1A.X_LT1013.92)  -25.0000         (X_U1A.X_LT1013.99)    0.0000             
+
+(X_U1B.X_LT1013.10)     .6151         (X_U1B.X_LT1013.11)  -14.9470             
+
+(X_U1B.X_LT1013.12)  -14.9470         (X_U1B.X_LT1013.13)     .5880             
+
+(X_U1B.X_LT1013.14)     .5880         (X_U1B.X_LT1013.53)   13.3900             
+
+(X_U1B.X_LT1013.54)  -14.3900         (X_U1B.X_LT1013.90)-15.02E-06             
+
+(X_U1B.X_LT1013.91)   25.0000         (X_U1B.X_LT1013.92)  -25.0000             
+
+(X_U1B.X_LT1013.99)    0.0000         (X_U1A.X_LT1013.101) 5.930E-06            
+
+(X_U1A.X_LT1013.102)-57.56E-06        (X_U1A.X_LT1013.105)  -14.6000            
+
+(X_U1B.X_LT1013.101) 5.930E-06        (X_U1B.X_LT1013.102)-57.56E-06            
+
+(X_U1B.X_LT1013.105)  -14.6000        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         6.799E-04
+    V_V2        -6.801E-04
+    V_V3         0.000E+00
+    X_U1A.X_LT1013.VCMC   2.920E-11
+    X_U1A.X_LT1013.VB  -8.019E-13
+    X_U1A.X_LT1013.VC   1.339E-11
+    X_U1A.X_LT1013.VE   1.439E-11
+    X_U1A.X_LT1013.VLIM  -6.727E-08
+    X_U1A.X_LT1013.VLP  -2.500E-11
+    X_U1A.X_LT1013.VLN  -2.500E-11
+    X_U1B.X_LT1013.VCMC   2.920E-11
+    X_U1B.X_LT1013.VB  -8.010E-13
+    X_U1B.X_LT1013.VC   1.339E-11
+    X_U1B.X_LT1013.VE   1.439E-11
+    X_U1B.X_LT1013.VLIM  -1.502E-08
+    X_U1B.X_LT1013.VLP  -2.500E-11
+    X_U1B.X_LT1013.VLN  -2.500E-11
+
+    TOTAL POWER DISSIPATION   2.04E-02  WATTS
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY C_C2 CMOD C
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (  OUT)-395.6E-06  (N00371)    0.0000     
+
+(N00403)    0.0000 (N00652)-63.57E-06 (N00729)-337.0E-06 (N00884)-5.747E-06     
+
+(N00933)-63.57E-06 (X_U1A.X_LT1013.6)-80.19E-09                                 
+
+(X_U1A.X_LT1013.7)-342.4E-06          (X_U1A.X_LT1013.8)-342.4E-06              
+
+(X_U1A.X_LT1013.9)    0.0000          (X_U1B.X_LT1013.6)-80.10E-09              
+
+(X_U1B.X_LT1013.7)-396.8E-06          (X_U1B.X_LT1013.8)-396.8E-06              
+
+(X_U1B.X_LT1013.9)    0.0000          (X_U1A.X_LT1013.10)     .6151             
+
+(X_U1A.X_LT1013.11)  -14.9470         (X_U1A.X_LT1013.12)  -14.9470             
+
+(X_U1A.X_LT1013.13)     .5880         (X_U1A.X_LT1013.14)     .5880             
+
+(X_U1A.X_LT1013.53)   13.3900         (X_U1A.X_LT1013.54)  -14.3900             
+
+(X_U1A.X_LT1013.90)-67.27E-06         (X_U1A.X_LT1013.91)   25.0000             
+
+(X_U1A.X_LT1013.92)  -25.0000         (X_U1A.X_LT1013.99)    0.0000             
+
+(X_U1B.X_LT1013.10)     .6151         (X_U1B.X_LT1013.11)  -14.9470             
+
+(X_U1B.X_LT1013.12)  -14.9470         (X_U1B.X_LT1013.13)     .5880             
+
+(X_U1B.X_LT1013.14)     .5880         (X_U1B.X_LT1013.53)   13.3900             
+
+(X_U1B.X_LT1013.54)  -14.3900         (X_U1B.X_LT1013.90)-15.02E-06             
+
+(X_U1B.X_LT1013.91)   25.0000         (X_U1B.X_LT1013.92)  -25.0000             
+
+(X_U1B.X_LT1013.99)    0.0000         (X_U1A.X_LT1013.101) 5.930E-06            
+
+(X_U1A.X_LT1013.102)-57.56E-06        (X_U1A.X_LT1013.105)  -14.6000            
+
+(X_U1B.X_LT1013.101) 5.930E-06        (X_U1B.X_LT1013.102)-57.56E-06            
+
+(X_U1B.X_LT1013.105)  -14.6000        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         6.799E-04
+    V_V2        -6.801E-04
+    V_V3         0.000E+00
+    X_U1A.X_LT1013.VCMC   2.920E-11
+    X_U1A.X_LT1013.VB  -8.019E-13
+    X_U1A.X_LT1013.VC   1.339E-11
+    X_U1A.X_LT1013.VE   1.439E-11
+    X_U1A.X_LT1013.VLIM  -6.727E-08
+    X_U1A.X_LT1013.VLP  -2.500E-11
+    X_U1A.X_LT1013.VLN  -2.500E-11
+    X_U1B.X_LT1013.VCMC   2.920E-11
+    X_U1B.X_LT1013.VB  -8.010E-13
+    X_U1B.X_LT1013.VC   1.339E-11
+    X_U1B.X_LT1013.VE   1.439E-11
+    X_U1B.X_LT1013.VLIM  -1.502E-08
+    X_U1B.X_LT1013.VLP  -2.500E-11
+    X_U1B.X_LT1013.VLN  -2.500E-11
+
+    TOTAL POWER DISSIPATION   2.04E-02  WATTS
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY C_C3 CMOD C
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (  OUT)-395.6E-06  (N00371)    0.0000     
+
+(N00403)    0.0000 (N00652)-63.57E-06 (N00729)-337.0E-06 (N00884)-5.747E-06     
+
+(N00933)-63.57E-06 (X_U1A.X_LT1013.6)-80.19E-09                                 
+
+(X_U1A.X_LT1013.7)-342.4E-06          (X_U1A.X_LT1013.8)-342.4E-06              
+
+(X_U1A.X_LT1013.9)    0.0000          (X_U1B.X_LT1013.6)-80.10E-09              
+
+(X_U1B.X_LT1013.7)-396.8E-06          (X_U1B.X_LT1013.8)-396.8E-06              
+
+(X_U1B.X_LT1013.9)    0.0000          (X_U1A.X_LT1013.10)     .6151             
+
+(X_U1A.X_LT1013.11)  -14.9470         (X_U1A.X_LT1013.12)  -14.9470             
+
+(X_U1A.X_LT1013.13)     .5880         (X_U1A.X_LT1013.14)     .5880             
+
+(X_U1A.X_LT1013.53)   13.3900         (X_U1A.X_LT1013.54)  -14.3900             
+
+(X_U1A.X_LT1013.90)-67.27E-06         (X_U1A.X_LT1013.91)   25.0000             
+
+(X_U1A.X_LT1013.92)  -25.0000         (X_U1A.X_LT1013.99)    0.0000             
+
+(X_U1B.X_LT1013.10)     .6151         (X_U1B.X_LT1013.11)  -14.9470             
+
+(X_U1B.X_LT1013.12)  -14.9470         (X_U1B.X_LT1013.13)     .5880             
+
+(X_U1B.X_LT1013.14)     .5880         (X_U1B.X_LT1013.53)   13.3900             
+
+(X_U1B.X_LT1013.54)  -14.3900         (X_U1B.X_LT1013.90)-15.02E-06             
+
+(X_U1B.X_LT1013.91)   25.0000         (X_U1B.X_LT1013.92)  -25.0000             
+
+(X_U1B.X_LT1013.99)    0.0000         (X_U1A.X_LT1013.101) 5.930E-06            
+
+(X_U1A.X_LT1013.102)-57.56E-06        (X_U1A.X_LT1013.105)  -14.6000            
+
+(X_U1B.X_LT1013.101) 5.930E-06        (X_U1B.X_LT1013.102)-57.56E-06            
+
+(X_U1B.X_LT1013.105)  -14.6000        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         6.799E-04
+    V_V2        -6.801E-04
+    V_V3         0.000E+00
+    X_U1A.X_LT1013.VCMC   2.920E-11
+    X_U1A.X_LT1013.VB  -8.019E-13
+    X_U1A.X_LT1013.VC   1.339E-11
+    X_U1A.X_LT1013.VE   1.439E-11
+    X_U1A.X_LT1013.VLIM  -6.727E-08
+    X_U1A.X_LT1013.VLP  -2.500E-11
+    X_U1A.X_LT1013.VLN  -2.500E-11
+    X_U1B.X_LT1013.VCMC   2.920E-11
+    X_U1B.X_LT1013.VB  -8.010E-13
+    X_U1B.X_LT1013.VC   1.339E-11
+    X_U1B.X_LT1013.VE   1.439E-11
+    X_U1B.X_LT1013.VLIM  -1.502E-08
+    X_U1B.X_LT1013.VLP  -2.500E-11
+    X_U1B.X_LT1013.VLN  -2.500E-11
+
+    TOTAL POWER DISSIPATION   2.04E-02  WATTS
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY C_C4 CMOD C
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (  OUT)-395.6E-06  (N00371)    0.0000     
+
+(N00403)    0.0000 (N00652)-63.57E-06 (N00729)-337.0E-06 (N00884)-5.747E-06     
+
+(N00933)-63.57E-06 (X_U1A.X_LT1013.6)-80.19E-09                                 
+
+(X_U1A.X_LT1013.7)-342.4E-06          (X_U1A.X_LT1013.8)-342.4E-06              
+
+(X_U1A.X_LT1013.9)    0.0000          (X_U1B.X_LT1013.6)-80.10E-09              
+
+(X_U1B.X_LT1013.7)-396.8E-06          (X_U1B.X_LT1013.8)-396.8E-06              
+
+(X_U1B.X_LT1013.9)    0.0000          (X_U1A.X_LT1013.10)     .6151             
+
+(X_U1A.X_LT1013.11)  -14.9470         (X_U1A.X_LT1013.12)  -14.9470             
+
+(X_U1A.X_LT1013.13)     .5880         (X_U1A.X_LT1013.14)     .5880             
+
+(X_U1A.X_LT1013.53)   13.3900         (X_U1A.X_LT1013.54)  -14.3900             
+
+(X_U1A.X_LT1013.90)-67.27E-06         (X_U1A.X_LT1013.91)   25.0000             
+
+(X_U1A.X_LT1013.92)  -25.0000         (X_U1A.X_LT1013.99)    0.0000             
+
+(X_U1B.X_LT1013.10)     .6151         (X_U1B.X_LT1013.11)  -14.9470             
+
+(X_U1B.X_LT1013.12)  -14.9470         (X_U1B.X_LT1013.13)     .5880             
+
+(X_U1B.X_LT1013.14)     .5880         (X_U1B.X_LT1013.53)   13.3900             
+
+(X_U1B.X_LT1013.54)  -14.3900         (X_U1B.X_LT1013.90)-15.02E-06             
+
+(X_U1B.X_LT1013.91)   25.0000         (X_U1B.X_LT1013.92)  -25.0000             
+
+(X_U1B.X_LT1013.99)    0.0000         (X_U1A.X_LT1013.101) 5.930E-06            
+
+(X_U1A.X_LT1013.102)-57.56E-06        (X_U1A.X_LT1013.105)  -14.6000            
+
+(X_U1B.X_LT1013.101) 5.930E-06        (X_U1B.X_LT1013.102)-57.56E-06            
+
+(X_U1B.X_LT1013.105)  -14.6000        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         6.799E-04
+    V_V2        -6.801E-04
+    V_V3         0.000E+00
+    X_U1A.X_LT1013.VCMC   2.920E-11
+    X_U1A.X_LT1013.VB  -8.019E-13
+    X_U1A.X_LT1013.VC   1.339E-11
+    X_U1A.X_LT1013.VE   1.439E-11
+    X_U1A.X_LT1013.VLIM  -6.727E-08
+    X_U1A.X_LT1013.VLP  -2.500E-11
+    X_U1A.X_LT1013.VLN  -2.500E-11
+    X_U1B.X_LT1013.VCMC   2.920E-11
+    X_U1B.X_LT1013.VB  -8.010E-13
+    X_U1B.X_LT1013.VC   1.339E-11
+    X_U1B.X_LT1013.VE   1.439E-11
+    X_U1B.X_LT1013.VLIM  -1.502E-08
+    X_U1B.X_LT1013.VLP  -2.500E-11
+    X_U1B.X_LT1013.VLN  -2.500E-11
+
+    TOTAL POWER DISSIPATION   2.04E-02  WATTS
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY R_R1 RMOD R
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (  OUT)-395.6E-06  (N00371)    0.0000     
+
+(N00403)    0.0000 (N00652)-63.57E-06 (N00729)-337.0E-06 (N00884)-5.747E-06     
+
+(N00933)-63.57E-06 (X_U1A.X_LT1013.6)-80.19E-09                                 
+
+(X_U1A.X_LT1013.7)-342.4E-06          (X_U1A.X_LT1013.8)-342.4E-06              
+
+(X_U1A.X_LT1013.9)    0.0000          (X_U1B.X_LT1013.6)-80.10E-09              
+
+(X_U1B.X_LT1013.7)-396.8E-06          (X_U1B.X_LT1013.8)-396.8E-06              
+
+(X_U1B.X_LT1013.9)    0.0000          (X_U1A.X_LT1013.10)     .6151             
+
+(X_U1A.X_LT1013.11)  -14.9470         (X_U1A.X_LT1013.12)  -14.9470             
+
+(X_U1A.X_LT1013.13)     .5880         (X_U1A.X_LT1013.14)     .5880             
+
+(X_U1A.X_LT1013.53)   13.3900         (X_U1A.X_LT1013.54)  -14.3900             
+
+(X_U1A.X_LT1013.90)-67.27E-06         (X_U1A.X_LT1013.91)   25.0000             
+
+(X_U1A.X_LT1013.92)  -25.0000         (X_U1A.X_LT1013.99)    0.0000             
+
+(X_U1B.X_LT1013.10)     .6151         (X_U1B.X_LT1013.11)  -14.9470             
+
+(X_U1B.X_LT1013.12)  -14.9470         (X_U1B.X_LT1013.13)     .5880             
+
+(X_U1B.X_LT1013.14)     .5880         (X_U1B.X_LT1013.53)   13.3900             
+
+(X_U1B.X_LT1013.54)  -14.3900         (X_U1B.X_LT1013.90)-15.02E-06             
+
+(X_U1B.X_LT1013.91)   25.0000         (X_U1B.X_LT1013.92)  -25.0000             
+
+(X_U1B.X_LT1013.99)    0.0000         (X_U1A.X_LT1013.101) 5.930E-06            
+
+(X_U1A.X_LT1013.102)-57.56E-06        (X_U1A.X_LT1013.105)  -14.6000            
+
+(X_U1B.X_LT1013.101) 5.930E-06        (X_U1B.X_LT1013.102)-57.56E-06            
+
+(X_U1B.X_LT1013.105)  -14.6000        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         6.799E-04
+    V_V2        -6.801E-04
+    V_V3         0.000E+00
+    X_U1A.X_LT1013.VCMC   2.920E-11
+    X_U1A.X_LT1013.VB  -8.019E-13
+    X_U1A.X_LT1013.VC   1.339E-11
+    X_U1A.X_LT1013.VE   1.439E-11
+    X_U1A.X_LT1013.VLIM  -6.727E-08
+    X_U1A.X_LT1013.VLP  -2.500E-11
+    X_U1A.X_LT1013.VLN  -2.500E-11
+    X_U1B.X_LT1013.VCMC   2.920E-11
+    X_U1B.X_LT1013.VB  -8.010E-13
+    X_U1B.X_LT1013.VC   1.339E-11
+    X_U1B.X_LT1013.VE   1.439E-11
+    X_U1B.X_LT1013.VLIM  -1.502E-08
+    X_U1B.X_LT1013.VLP  -2.500E-11
+    X_U1B.X_LT1013.VLN  -2.500E-11
+
+    TOTAL POWER DISSIPATION   2.04E-02  WATTS
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY R_R2 RMOD R
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (  OUT)-395.6E-06  (N00371)    0.0000     
+
+(N00403)    0.0000 (N00652)-63.57E-06 (N00729)-337.0E-06 (N00884)-5.747E-06     
+
+(N00933)-63.57E-06 (X_U1A.X_LT1013.6)-80.19E-09                                 
+
+(X_U1A.X_LT1013.7)-342.4E-06          (X_U1A.X_LT1013.8)-342.4E-06              
+
+(X_U1A.X_LT1013.9)    0.0000          (X_U1B.X_LT1013.6)-80.10E-09              
+
+(X_U1B.X_LT1013.7)-396.8E-06          (X_U1B.X_LT1013.8)-396.8E-06              
+
+(X_U1B.X_LT1013.9)    0.0000          (X_U1A.X_LT1013.10)     .6151             
+
+(X_U1A.X_LT1013.11)  -14.9470         (X_U1A.X_LT1013.12)  -14.9470             
+
+(X_U1A.X_LT1013.13)     .5880         (X_U1A.X_LT1013.14)     .5880             
+
+(X_U1A.X_LT1013.53)   13.3900         (X_U1A.X_LT1013.54)  -14.3900             
+
+(X_U1A.X_LT1013.90)-67.27E-06         (X_U1A.X_LT1013.91)   25.0000             
+
+(X_U1A.X_LT1013.92)  -25.0000         (X_U1A.X_LT1013.99)    0.0000             
+
+(X_U1B.X_LT1013.10)     .6151         (X_U1B.X_LT1013.11)  -14.9470             
+
+(X_U1B.X_LT1013.12)  -14.9470         (X_U1B.X_LT1013.13)     .5880             
+
+(X_U1B.X_LT1013.14)     .5880         (X_U1B.X_LT1013.53)   13.3900             
+
+(X_U1B.X_LT1013.54)  -14.3900         (X_U1B.X_LT1013.90)-15.02E-06             
+
+(X_U1B.X_LT1013.91)   25.0000         (X_U1B.X_LT1013.92)  -25.0000             
+
+(X_U1B.X_LT1013.99)    0.0000         (X_U1A.X_LT1013.101) 5.930E-06            
+
+(X_U1A.X_LT1013.102)-57.56E-06        (X_U1A.X_LT1013.105)  -14.6000            
+
+(X_U1B.X_LT1013.101) 5.930E-06        (X_U1B.X_LT1013.102)-57.56E-06            
+
+(X_U1B.X_LT1013.105)  -14.6000        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         6.799E-04
+    V_V2        -6.801E-04
+    V_V3         0.000E+00
+    X_U1A.X_LT1013.VCMC   2.920E-11
+    X_U1A.X_LT1013.VB  -8.019E-13
+    X_U1A.X_LT1013.VC   1.339E-11
+    X_U1A.X_LT1013.VE   1.439E-11
+    X_U1A.X_LT1013.VLIM  -6.727E-08
+    X_U1A.X_LT1013.VLP  -2.500E-11
+    X_U1A.X_LT1013.VLN  -2.500E-11
+    X_U1B.X_LT1013.VCMC   2.920E-11
+    X_U1B.X_LT1013.VB  -8.010E-13
+    X_U1B.X_LT1013.VC   1.339E-11
+    X_U1B.X_LT1013.VE   1.439E-11
+    X_U1B.X_LT1013.VLIM  -1.502E-08
+    X_U1B.X_LT1013.VLP  -2.500E-11
+    X_U1B.X_LT1013.VLN  -2.500E-11
+
+    TOTAL POWER DISSIPATION   2.04E-02  WATTS
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY R_R3 RMOD R
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (  OUT)-395.6E-06  (N00371)    0.0000     
+
+(N00403)    0.0000 (N00652)-63.57E-06 (N00729)-337.2E-06 (N00884)-5.751E-06     
+
+(N00933)-63.57E-06 (X_U1A.X_LT1013.6)-80.19E-09                                 
+
+(X_U1A.X_LT1013.7)-342.6E-06          (X_U1A.X_LT1013.8)-342.6E-06              
+
+(X_U1A.X_LT1013.9)    0.0000          (X_U1B.X_LT1013.6)-80.10E-09              
+
+(X_U1B.X_LT1013.7)-396.8E-06          (X_U1B.X_LT1013.8)-396.8E-06              
+
+(X_U1B.X_LT1013.9)    0.0000          (X_U1A.X_LT1013.10)     .6151             
+
+(X_U1A.X_LT1013.11)  -14.9470         (X_U1A.X_LT1013.12)  -14.9470             
+
+(X_U1A.X_LT1013.13)     .5880         (X_U1A.X_LT1013.14)     .5880             
+
+(X_U1A.X_LT1013.53)   13.3900         (X_U1A.X_LT1013.54)  -14.3900             
+
+(X_U1A.X_LT1013.90)-67.31E-06         (X_U1A.X_LT1013.91)   25.0000             
+
+(X_U1A.X_LT1013.92)  -25.0000         (X_U1A.X_LT1013.99)    0.0000             
+
+(X_U1B.X_LT1013.10)     .6151         (X_U1B.X_LT1013.11)  -14.9470             
+
+(X_U1B.X_LT1013.12)  -14.9470         (X_U1B.X_LT1013.13)     .5880             
+
+(X_U1B.X_LT1013.14)     .5880         (X_U1B.X_LT1013.53)   13.3900             
+
+(X_U1B.X_LT1013.54)  -14.3900         (X_U1B.X_LT1013.90)-15.02E-06             
+
+(X_U1B.X_LT1013.91)   25.0000         (X_U1B.X_LT1013.92)  -25.0000             
+
+(X_U1B.X_LT1013.99)    0.0000         (X_U1A.X_LT1013.101) 5.930E-06            
+
+(X_U1A.X_LT1013.102)-57.56E-06        (X_U1A.X_LT1013.105)  -14.6000            
+
+(X_U1B.X_LT1013.101) 5.930E-06        (X_U1B.X_LT1013.102)-57.56E-06            
+
+(X_U1B.X_LT1013.105)  -14.6000        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         6.799E-04
+    V_V2        -6.801E-04
+    V_V3         0.000E+00
+    X_U1A.X_LT1013.VCMC   2.920E-11
+    X_U1A.X_LT1013.VB  -8.019E-13
+    X_U1A.X_LT1013.VC   1.339E-11
+    X_U1A.X_LT1013.VE   1.439E-11
+    X_U1A.X_LT1013.VLIM  -6.731E-08
+    X_U1A.X_LT1013.VLP  -2.500E-11
+    X_U1A.X_LT1013.VLN  -2.500E-11
+    X_U1B.X_LT1013.VCMC   2.920E-11
+    X_U1B.X_LT1013.VB  -8.010E-13
+    X_U1B.X_LT1013.VC   1.339E-11
+    X_U1B.X_LT1013.VE   1.439E-11
+    X_U1B.X_LT1013.VLIM  -1.502E-08
+    X_U1B.X_LT1013.VLP  -2.500E-11
+    X_U1B.X_LT1013.VLN  -2.500E-11
+
+    TOTAL POWER DISSIPATION   2.04E-02  WATTS
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY R_R4 RMOD R
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (  OUT)-395.6E-06  (N00371)    0.0000     
+
+(N00403)    0.0000 (N00652)-63.57E-06 (N00729)-337.0E-06 (N00884)-5.741E-06     
+
+(N00933)-63.57E-06 (X_U1A.X_LT1013.6)-80.19E-09                                 
+
+(X_U1A.X_LT1013.7)-342.3E-06          (X_U1A.X_LT1013.8)-342.3E-06              
+
+(X_U1A.X_LT1013.9)    0.0000          (X_U1B.X_LT1013.6)-80.10E-09              
+
+(X_U1B.X_LT1013.7)-396.8E-06          (X_U1B.X_LT1013.8)-396.8E-06              
+
+(X_U1B.X_LT1013.9)    0.0000          (X_U1A.X_LT1013.10)     .6151             
+
+(X_U1A.X_LT1013.11)  -14.9470         (X_U1A.X_LT1013.12)  -14.9470             
+
+(X_U1A.X_LT1013.13)     .5880         (X_U1A.X_LT1013.14)     .5880             
+
+(X_U1A.X_LT1013.53)   13.3900         (X_U1A.X_LT1013.54)  -14.3900             
+
+(X_U1A.X_LT1013.90)-67.21E-06         (X_U1A.X_LT1013.91)   25.0000             
+
+(X_U1A.X_LT1013.92)  -25.0000         (X_U1A.X_LT1013.99)    0.0000             
+
+(X_U1B.X_LT1013.10)     .6151         (X_U1B.X_LT1013.11)  -14.9470             
+
+(X_U1B.X_LT1013.12)  -14.9470         (X_U1B.X_LT1013.13)     .5880             
+
+(X_U1B.X_LT1013.14)     .5880         (X_U1B.X_LT1013.53)   13.3900             
+
+(X_U1B.X_LT1013.54)  -14.3900         (X_U1B.X_LT1013.90)-15.02E-06             
+
+(X_U1B.X_LT1013.91)   25.0000         (X_U1B.X_LT1013.92)  -25.0000             
+
+(X_U1B.X_LT1013.99)    0.0000         (X_U1A.X_LT1013.101) 5.930E-06            
+
+(X_U1A.X_LT1013.102)-57.56E-06        (X_U1A.X_LT1013.105)  -14.6000            
+
+(X_U1B.X_LT1013.101) 5.930E-06        (X_U1B.X_LT1013.102)-57.56E-06            
+
+(X_U1B.X_LT1013.105)  -14.6000        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         6.799E-04
+    V_V2        -6.801E-04
+    V_V3         0.000E+00
+    X_U1A.X_LT1013.VCMC   2.920E-11
+    X_U1A.X_LT1013.VB  -8.019E-13
+    X_U1A.X_LT1013.VC   1.339E-11
+    X_U1A.X_LT1013.VE   1.439E-11
+    X_U1A.X_LT1013.VLIM  -6.721E-08
+    X_U1A.X_LT1013.VLP  -2.500E-11
+    X_U1A.X_LT1013.VLN  -2.500E-11
+    X_U1B.X_LT1013.VCMC   2.920E-11
+    X_U1B.X_LT1013.VB  -8.010E-13
+    X_U1B.X_LT1013.VC   1.339E-11
+    X_U1B.X_LT1013.VE   1.439E-11
+    X_U1B.X_LT1013.VLIM  -1.502E-08
+    X_U1B.X_LT1013.VLP  -2.500E-11
+    X_U1B.X_LT1013.VLN  -2.500E-11
+
+    TOTAL POWER DISSIPATION   2.04E-02  WATTS
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY R_R5 RMOD R
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (  OUT)-395.6E-06  (N00371)    0.0000     
+
+(N00403)    0.0000 (N00652)-63.57E-06 (N00729)-337.0E-06 (N00884)-5.752E-06     
+
+(N00933)-63.57E-06 (X_U1A.X_LT1013.6)-80.19E-09                                 
+
+(X_U1A.X_LT1013.7)-342.4E-06          (X_U1A.X_LT1013.8)-342.4E-06              
+
+(X_U1A.X_LT1013.9)    0.0000          (X_U1B.X_LT1013.6)-80.10E-09              
+
+(X_U1B.X_LT1013.7)-396.8E-06          (X_U1B.X_LT1013.8)-396.8E-06              
+
+(X_U1B.X_LT1013.9)    0.0000          (X_U1A.X_LT1013.10)     .6151             
+
+(X_U1A.X_LT1013.11)  -14.9470         (X_U1A.X_LT1013.12)  -14.9470             
+
+(X_U1A.X_LT1013.13)     .5880         (X_U1A.X_LT1013.14)     .5880             
+
+(X_U1A.X_LT1013.53)   13.3900         (X_U1A.X_LT1013.54)  -14.3900             
+
+(X_U1A.X_LT1013.90)-67.26E-06         (X_U1A.X_LT1013.91)   25.0000             
+
+(X_U1A.X_LT1013.92)  -25.0000         (X_U1A.X_LT1013.99)    0.0000             
+
+(X_U1B.X_LT1013.10)     .6151         (X_U1B.X_LT1013.11)  -14.9470             
+
+(X_U1B.X_LT1013.12)  -14.9470         (X_U1B.X_LT1013.13)     .5880             
+
+(X_U1B.X_LT1013.14)     .5880         (X_U1B.X_LT1013.53)   13.3900             
+
+(X_U1B.X_LT1013.54)  -14.3900         (X_U1B.X_LT1013.90)-15.02E-06             
+
+(X_U1B.X_LT1013.91)   25.0000         (X_U1B.X_LT1013.92)  -25.0000             
+
+(X_U1B.X_LT1013.99)    0.0000         (X_U1A.X_LT1013.101) 5.930E-06            
+
+(X_U1A.X_LT1013.102)-57.56E-06        (X_U1A.X_LT1013.105)  -14.6000            
+
+(X_U1B.X_LT1013.101) 5.930E-06        (X_U1B.X_LT1013.102)-57.56E-06            
+
+(X_U1B.X_LT1013.105)  -14.6000        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         6.799E-04
+    V_V2        -6.801E-04
+    V_V3         0.000E+00
+    X_U1A.X_LT1013.VCMC   2.920E-11
+    X_U1A.X_LT1013.VB  -8.019E-13
+    X_U1A.X_LT1013.VC   1.339E-11
+    X_U1A.X_LT1013.VE   1.439E-11
+    X_U1A.X_LT1013.VLIM  -6.726E-08
+    X_U1A.X_LT1013.VLP  -2.500E-11
+    X_U1A.X_LT1013.VLN  -2.500E-11
+    X_U1B.X_LT1013.VCMC   2.920E-11
+    X_U1B.X_LT1013.VB  -8.010E-13
+    X_U1B.X_LT1013.VC   1.339E-11
+    X_U1B.X_LT1013.VE   1.439E-11
+    X_U1B.X_LT1013.VLIM  -1.502E-08
+    X_U1B.X_LT1013.VLP  -2.500E-11
+    X_U1B.X_LT1013.VLN  -2.500E-11
+
+    TOTAL POWER DISSIPATION   2.04E-02  WATTS
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY R_R6 RMOD R
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (  OUT)-395.9E-06  (N00371)    0.0000     
+
+(N00403)    0.0000 (N00652)-63.57E-06 (N00729)-337.0E-06 (N00884)-5.747E-06     
+
+(N00933)-63.57E-06 (X_U1A.X_LT1013.6)-80.19E-09                                 
+
+(X_U1A.X_LT1013.7)-342.4E-06          (X_U1A.X_LT1013.8)-342.4E-06              
+
+(X_U1A.X_LT1013.9)    0.0000          (X_U1B.X_LT1013.6)-80.10E-09              
+
+(X_U1B.X_LT1013.7)-397.1E-06          (X_U1B.X_LT1013.8)-397.1E-06              
+
+(X_U1B.X_LT1013.9)    0.0000          (X_U1A.X_LT1013.10)     .6151             
+
+(X_U1A.X_LT1013.11)  -14.9470         (X_U1A.X_LT1013.12)  -14.9470             
+
+(X_U1A.X_LT1013.13)     .5880         (X_U1A.X_LT1013.14)     .5880             
+
+(X_U1A.X_LT1013.53)   13.3900         (X_U1A.X_LT1013.54)  -14.3900             
+
+(X_U1A.X_LT1013.90)-67.27E-06         (X_U1A.X_LT1013.91)   25.0000             
+
+(X_U1A.X_LT1013.92)  -25.0000         (X_U1A.X_LT1013.99)    0.0000             
+
+(X_U1B.X_LT1013.10)     .6151         (X_U1B.X_LT1013.11)  -14.9470             
+
+(X_U1B.X_LT1013.12)  -14.9470         (X_U1B.X_LT1013.13)     .5880             
+
+(X_U1B.X_LT1013.14)     .5880         (X_U1B.X_LT1013.53)   13.3900             
+
+(X_U1B.X_LT1013.54)  -14.3900         (X_U1B.X_LT1013.90)-15.02E-06             
+
+(X_U1B.X_LT1013.91)   25.0000         (X_U1B.X_LT1013.92)  -25.0000             
+
+(X_U1B.X_LT1013.99)    0.0000         (X_U1A.X_LT1013.101) 5.930E-06            
+
+(X_U1A.X_LT1013.102)-57.56E-06        (X_U1A.X_LT1013.105)  -14.6000            
+
+(X_U1B.X_LT1013.101) 5.930E-06        (X_U1B.X_LT1013.102)-57.56E-06            
+
+(X_U1B.X_LT1013.105)  -14.6000        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         6.799E-04
+    V_V2        -6.801E-04
+    V_V3         0.000E+00
+    X_U1A.X_LT1013.VCMC   2.920E-11
+    X_U1A.X_LT1013.VB  -8.019E-13
+    X_U1A.X_LT1013.VC   1.339E-11
+    X_U1A.X_LT1013.VE   1.439E-11
+    X_U1A.X_LT1013.VLIM  -6.727E-08
+    X_U1A.X_LT1013.VLP  -2.500E-11
+    X_U1A.X_LT1013.VLN  -2.500E-11
+    X_U1B.X_LT1013.VCMC   2.920E-11
+    X_U1B.X_LT1013.VB  -8.010E-13
+    X_U1B.X_LT1013.VC   1.339E-11
+    X_U1B.X_LT1013.VE   1.439E-11
+    X_U1B.X_LT1013.VLIM  -1.502E-08
+    X_U1B.X_LT1013.VLP  -2.500E-11
+    X_U1B.X_LT1013.VLN  -2.500E-11
+
+    TOTAL POWER DISSIPATION   2.04E-02  WATTS
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SORTED DEVIATIONS OF V(OUT)      TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY SUMMARY
+
+******************************************************************************
+
+
+
+
+
+Mean Deviation =   15.8070E-06
+Sigma          =    3.3901E-03
+
+ RUN                    MAX DEVIATION FROM NOMINAL
+
+R_R3 RMOD R            4.9231E-03  (1.45 sigma)  higher  at F =   10.4710E+03
+                        (   4.6639% change per 1% change in Model Parameter)
+
+C_C1 CMOD C            4.6568E-03  (1.37 sigma)  higher  at F =   10.0000E+03
+                        (   4.6552% change per 1% change in Model Parameter)
+
+C_C4 CMOD C            3.6853E-03  (1.09 sigma)  lower  at F =   10.0000E+03
+                        (  -3.684 % change per 1% change in Model Parameter)
+
+C_C2 CMOD C            3.5600E-03  (1.05 sigma)  lower  at F =   10.0000E+03
+                        (  -3.5588% change per 1% change in Model Parameter)
+
+R_R2 RMOD R            3.5155E-03  (1.04 sigma)  higher  at F =   10.0000E+03
+                        (   3.5143% change per 1% change in Model Parameter)
+
+R_R6 RMOD R            3.3777E-03  (1.00 sigma)  lower  at F =   10.0000E+03
+                        (  -3.3765% change per 1% change in Model Parameter)
+
+R_R5 RMOD R            2.9920E-03  ( .88 sigma)  lower  at F =    9.5499E+03
+                        (  -2.882 % change per 1% change in Model Parameter)
+
+C_C3 CMOD C            2.7918E-03  ( .82 sigma)  higher  at F =   10.0000E+03
+                        (   2.7908% change per 1% change in Model Parameter)
+
+R_R4 RMOD R            1.1047E-03  ( .33 sigma)  lower  at F =   10.4710E+03
+                        (  -1.0466% change per 1% change in Model Parameter)
+
+R_R1 RMOD R            1.0093E-03  ( .30 sigma)  lower  at F =   10.4710E+03
+                        (   -.9562% change per 1% change in Model Parameter)
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      WORST CASE ALL DEVICES
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   15.0000  (   V-)  -15.0000  (  OUT)-392.2E-06  (N00371)    0.0000     
+
+(N00403)    0.0000 (N00652)-63.57E-06 (N00729)-339.7E-06 (N00884)-5.793E-06     
+
+(N00933)-63.57E-06 (X_U1A.X_LT1013.6)-80.18E-09                                 
+
+(X_U1A.X_LT1013.7)-345.2E-06          (X_U1A.X_LT1013.8)-345.2E-06              
+
+(X_U1A.X_LT1013.9)    0.0000          (X_U1B.X_LT1013.6)-80.11E-09              
+
+(X_U1B.X_LT1013.7)-393.4E-06          (X_U1B.X_LT1013.8)-393.4E-06              
+
+(X_U1B.X_LT1013.9)    0.0000          (X_U1A.X_LT1013.10)     .6151             
+
+(X_U1A.X_LT1013.11)  -14.9470         (X_U1A.X_LT1013.12)  -14.9470             
+
+(X_U1A.X_LT1013.13)     .5880         (X_U1A.X_LT1013.14)     .5880             
+
+(X_U1A.X_LT1013.53)   13.3900         (X_U1A.X_LT1013.54)  -14.3900             
+
+(X_U1A.X_LT1013.90)-68.22E-06         (X_U1A.X_LT1013.91)   25.0000             
+
+(X_U1A.X_LT1013.92)  -25.0000         (X_U1A.X_LT1013.99)    0.0000             
+
+(X_U1B.X_LT1013.10)     .6151         (X_U1B.X_LT1013.11)  -14.9470             
+
+(X_U1B.X_LT1013.12)  -14.9470         (X_U1B.X_LT1013.13)     .5880             
+
+(X_U1B.X_LT1013.14)     .5880         (X_U1B.X_LT1013.53)   13.3900             
+
+(X_U1B.X_LT1013.54)  -14.3900         (X_U1B.X_LT1013.90)-15.02E-06             
+
+(X_U1B.X_LT1013.91)   25.0000         (X_U1B.X_LT1013.92)  -25.0000             
+
+(X_U1B.X_LT1013.99)    0.0000         (X_U1A.X_LT1013.101) 5.930E-06            
+
+(X_U1A.X_LT1013.102)-57.56E-06        (X_U1A.X_LT1013.105)  -14.6000            
+
+(X_U1B.X_LT1013.101) 5.930E-06        (X_U1B.X_LT1013.102)-57.56E-06            
+
+(X_U1B.X_LT1013.105)  -14.6000        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         6.799E-04
+    V_V2        -6.801E-04
+    V_V3         0.000E+00
+    X_U1A.X_LT1013.VCMC   2.920E-11
+    X_U1A.X_LT1013.VB  -8.018E-13
+    X_U1A.X_LT1013.VC   1.339E-11
+    X_U1A.X_LT1013.VE   1.439E-11
+    X_U1A.X_LT1013.VLIM  -6.822E-08
+    X_U1A.X_LT1013.VLP  -2.500E-11
+    X_U1A.X_LT1013.VLN  -2.500E-11
+    X_U1B.X_LT1013.VCMC   2.920E-11
+    X_U1B.X_LT1013.VB  -8.011E-13
+    X_U1B.X_LT1013.VC   1.339E-11
+    X_U1B.X_LT1013.VE   1.439E-11
+    X_U1B.X_LT1013.VLIM  -1.502E-08
+    X_U1B.X_LT1013.VLP  -2.500E-11
+    X_U1B.X_LT1013.VLN  -2.500E-11
+
+    TOTAL POWER DISSIPATION   2.04E-02  WATTS
+
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     UPDATED MODEL PARAMETERS         TEMPERATURE =   27.000 DEG C
+
+                      WORST CASE ALL DEVICES
+
+******************************************************************************
+
+
+
+Device       MODEL        PARAMETER    NEW VALUE    
+C_C1         CMOD         C               1.05          (Increased)  
+C_C2         CMOD         C                .95          (Decreased)  
+C_C3         CMOD         C               1.05          (Increased)  
+C_C4         CMOD         C                .95          (Decreased)  
+R_R1         RMOD         R                .99          (Decreased)  
+R_R2         RMOD         R               1.01          (Increased)  
+R_R3         RMOD         R               1.01          (Increased)  
+R_R4         RMOD         R                .99          (Decreased)  
+R_R5         RMOD         R                .99          (Decreased)  
+R_R6         RMOD         R                .99          (Decreased)  
+    
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     SORTED DEVIATIONS OF V(OUT)      TEMPERATURE =   27.000 DEG C
+
+                      WORST CASE SUMMARY
+
+******************************************************************************
+
+
+
+
+
+Mean Deviation =    1.4598
+Sigma          =    0     
+
+ RUN                    MAX DEVIATION FROM NOMINAL
+
+WORST CASE ALL DEVICES
+                        1.4598  higher  at F =   10.0000E+03
+                        ( 245.93% of Nominal)
+
+
+
+          JOB CONCLUDED
+
+**** 12/30/20 12:43:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-WorstCase"  [ D:\Orcad\lab4\chebishev-pspicefiles\schematic1\worstcase.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .44
+

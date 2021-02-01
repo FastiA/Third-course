@@ -1,0 +1,16 @@
+.ALIASES
+R_R1            R1(1=IN 2=MID ) CN @LAB4.SCHEMATIC1(sch_1):INS30@ANALOG.R.Normal(chips)
+R_R2            R2(1=MID 2=VCC ) CN @LAB4.SCHEMATIC1(sch_1):INS61@ANALOG.R.Normal(chips)
+R_R3            R3(1=0 2=MID ) CN @LAB4.SCHEMATIC1(sch_1):INS77@ANALOG.R.Normal(chips)
+R_R4            R4(1=0 2=OUT ) CN @LAB4.SCHEMATIC1(sch_1):INS93@ANALOG.R.Normal(chips)
+C_C1            C1(1=MID 2=OUT ) CN @LAB4.SCHEMATIC1(sch_1):INS118@ANALOG.C.Normal(chips)
+D_D1            D1(1=MID 2=VCC ) CN @LAB4.SCHEMATIC1(sch_1):INS322@DIODE.D1N3940.Normal(chips)
+D_D2            D2(1=0 2=MID ) CN @LAB4.SCHEMATIC1(sch_1):INS355@DIODE.D1N3940.Normal(chips)
+V_V1            V1(+=VCC -=0 ) CN @LAB4.SCHEMATIC1(sch_1):INS629@SOURCE.VDC.Normal(chips)
+V_V2            V2(+=IN -=N00810 ) CN @LAB4.SCHEMATIC1(sch_1):INS765@SOURCE.VAC.Normal(chips)
+V_V3            V3(+=N00810 -=0 ) CN @LAB4.SCHEMATIC1(sch_1):INS794@SOURCSTM.VSTIM.Normal(chips)
+_    _(In=IN)
+_    _(mid=MID)
+_    _(Out=OUT)
+_    _(Vcc=VCC)
+.ENDALIASES

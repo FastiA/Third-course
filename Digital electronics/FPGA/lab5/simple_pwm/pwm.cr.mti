@@ -1,0 +1,8 @@
+D:/FPGA/lab5/simple_pwm/simple_pwm.v {1 {vlog -work work -stats=none D:/FPGA/lab5/simple_pwm/simple_pwm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module simple_pwm
+
+Top level modules:
+	simple_pwm
+
+} {} {}}

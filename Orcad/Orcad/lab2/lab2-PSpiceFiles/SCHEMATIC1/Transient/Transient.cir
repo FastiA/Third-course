@@ -1,0 +1,21 @@
+** Profile: "SCHEMATIC1-Transient"  [ D:\Orcad\lab2\lab2-pspicefiles\schematic1\transient.sim ] 
+
+** Creating circuit file "Transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "D:\Orcad\lab2\lab2-pspicefiles\schematic1\Transient\Transient_profile.inc" 
+* Local Libraries :
+.INC "../../../clip.inc" 
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ms 20ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

@@ -1,0 +1,64 @@
+
+**** 12/02/20 15:41:10 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MC"  [ D:\Orcad\lab4\lab4-PSpiceFiles\SCHEMATIC1\MC.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "MC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab4-pspicefiles/lab4.lib" 
+.STMLIB "../../../lab4-PSpiceFiles/LAB4.stl" 
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM P 0 5 0.1 
+.MC 10 DC I(V_Meter) YMAX OUTPUT ALL 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB4
+R_R1         IN MID  {R1Val} TC=0,0 
+R_R2         MID VCC  3.3k TC=0,0 
+R_R3         0 MID  3.3k TC=0,0 
+R_R4         0 OUT  5.6k TC=0,0 
+C_C1         MID OUT  0.47u  TC=0,0 
+D_D1         MID VCC D1N3940 
+D_D2         0 MID D1N3940 
+V_V1         VCC 0 5V
+V_V2         IN N00810 DC 0Vdc AC 1V 
+V_V3         N00810 0   STIMULUS=SIN
+V_V4         N01684 N01795 DC 1.35V AC <AC> <TRAN>
+----------------------------------------$
+ERROR(ORPSIM-16492): Missing value
+V_Meter         N01747 N01754 DC <DC> AC <AC> <TRAN>
+----------------------------------$
+ERROR(ORPSIM-16492): Missing value
+R_R9         N01691 N01684  25 TC=0,0 
+R_R10         N01691 N01795  470 TC=0,0 
+R_R11         N01754 N01758  2k TC=0,0 
+R_R12         N01747 N01691 Rmonte1 1k
+R_R13         N01758 N01691 Rmonte1 1k
+R_R14         N01795 N01747 Rmonte1 1k
+R_R15         N01795 N01758 RTherm {1k*(1+P*Pcoeff/Pnom)}
+.PARAM  p=0 pcoeff=-0.06 pnom=1.0 r1val=1k
+
+**** RESUMING MC.cir ****
+.END
+

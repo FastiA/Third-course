@@ -1,0 +1,176 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Modelsim/lab7
+vdecoder
+Z0 !s110 1607372323
+!i10b 1
+!s100 Z:Y7nM=bOcR88Ho9c0bPO3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I@hR[;M;IVRi3LJ>`hg_GI1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/Modelsim/lab8
+w1607268521
+8D:/Modelsim/lab8/code/decoder.v
+FD:/Modelsim/lab8/code/decoder.v
+!i122 56
+L0 1 18
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1607372323.000000
+!s107 D:/Modelsim/lab8/code/decoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Modelsim/lab8/code/decoder.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vFFSM
+Z8 !s110 1607372324
+!i10b 1
+!s100 :zg__D`BmaH3M>nnG7LI:3
+R1
+Ik2UZERZZmlBnKREfCZ`Qc3
+R2
+R3
+w1607372215
+8D:/Modelsim/lab8/code/FFSM.v
+FD:/Modelsim/lab8/code/FFSM.v
+!i122 58
+L0 1 106
+R4
+r1
+!s85 0
+31
+Z9 !s108 1607372324.000000
+!s107 D:/Modelsim/lab8/code/FFSM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Modelsim/lab8/code/FFSM.v|
+!i113 1
+R6
+R7
+n@f@f@s@m
+vFSM
+R8
+!i10b 1
+!s100 DDieb^>mz]MThg2zZ:91]1
+R1
+I=YR6]I]=U:MHQ7[JBm^5l0
+R2
+R3
+w1607272075
+8D:\Modelsim\lab8\code\FSM.v
+FD:\Modelsim\lab8\code\FSM.v
+!i122 57
+L0 1 137
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:\Modelsim\lab8\code\FSM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\Modelsim\lab8\code\FSM.v|
+!i113 1
+R6
+R7
+n@f@s@m
+vMFFSM
+R8
+!i10b 1
+!s100 MS:IU>JF:[FL`8>_1`3aO0
+R1
+Imz06JbZ[h1US76C5NbOMY1
+R2
+R3
+w1607372209
+8D:/Modelsim/lab8/code/MFFSM.v
+FD:/Modelsim/lab8/code/MFFSM.v
+!i122 60
+L0 1 35
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/Modelsim/lab8/code/MFFSM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Modelsim/lab8/code/MFFSM.v|
+!i113 1
+R6
+R7
+n@m@f@f@s@m
+vMFFSM_tb
+R8
+!i10b 1
+!s100 GCKb0_j75INMWD8>5eFGi2
+R1
+I1o>XPF[iBH?Gn:^XzHH;`3
+R2
+R3
+w1607372166
+8D:/Modelsim/lab8/code/MFFSM_tb.v
+FD:/Modelsim/lab8/code/MFFSM_tb.v
+!i122 61
+L0 3 50
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/Modelsim/lab8/code/MFFSM_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Modelsim/lab8/code/MFFSM_tb.v|
+!i113 1
+R6
+R7
+n@m@f@f@s@m_tb
+vregister
+R0
+!i10b 1
+!s100 AlC=COmR6zYF`2z?U`2g]3
+R1
+IdQzf^g2f@2JJ^P[=:8B^22
+R2
+R3
+w1607268279
+8D:/Modelsim/lab8/code/register.v
+FD:/Modelsim/lab8/code/register.v
+!i122 55
+L0 1 13
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Modelsim/lab8/code/register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Modelsim/lab8/code/register.v|
+!i113 1
+R6
+R7
+vrom
+R8
+!i10b 1
+!s100 <oSz:]<BQUJ^__j_Zg^BW3
+R1
+I73o@d7NmZ4K5oD3jW3VfI1
+R2
+R3
+w1607370134
+8D:/Modelsim/lab8/code/rom.v
+FD:/Modelsim/lab8/code/rom.v
+!i122 59
+L0 1 17
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/Modelsim/lab8/code/rom.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Modelsim/lab8/code/rom.v|
+!i113 1
+R6
+R7

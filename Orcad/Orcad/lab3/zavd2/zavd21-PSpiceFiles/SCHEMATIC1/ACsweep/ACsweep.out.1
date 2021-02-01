@@ -1,0 +1,50 @@
+
+**** 11/24/20 14:33:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-ACsweep"  [ D:\Orcad\lab3\zavd2\zavd21-PSpiceFiles\SCHEMATIC1\ACsweep.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ACsweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 11 10 100G
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ZAVD21
+R_R1         IN N00074  {2*ValR3} TC=0,0 
+R_R2         N00074 OUT  {2*ValR3} TC=0,0 
+R_R3         N00127 N00103  {ValR3} TC=0,0 
+C_C1         N00127 N00074  {ValC3}  TC=0,0 
+C_C2         N00103 OUT  {0.5*ValC3}  TC=0,0 
+C_C3         IN N00103  {0.5*ValC3}  TC=0,0 
+V_V1         IN 0 DC 0Vdc AC 1V 
+R_Rn         0 OUT  1k TC=0,0 
+.PARAM  valc3=10n valr3=10k
+
+**** RESUMING ACsweep.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00127 is floating
+
+ERROR(ORPSIM-15142): Node N00103 is floating
+

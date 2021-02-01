@@ -1,0 +1,81 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Modelsim/lab2
+vDeshif
+!s110 1601998418
+!i10b 1
+!s100 h0BeK]_>BHdRf6kcCO^Jo3
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IR]HPH3;F`_CSmKmNnL5hl0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Modelsim/lab3
+w1601998411
+8D:\Modelsim\lab3\firstw.v
+FD:\Modelsim\lab3\firstw.v
+!i122 0
+L0 1 15
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1601998418.000000
+!s107 D:\Modelsim\lab3\firstw.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\Modelsim\lab3\firstw.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@deshif
+vfirstw
+!s110 1602156103
+!i10b 1
+!s100 T9ETk5ik]3kB8E_R6d8FC1
+R0
+I;3jPI2hkj>kbhl;``cj1C0
+R1
+R2
+w1602149225
+8D:/Modelsim/lab3/firstw.v
+FD:/Modelsim/lab3/firstw.v
+!i122 22
+L0 1 44
+R3
+r1
+!s85 0
+31
+!s108 1602156103.000000
+!s107 D:/Modelsim/lab3/firstw.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Modelsim/lab3/firstw.v|
+!i113 1
+R4
+R5
+vsecondw
+!s110 1602157628
+!i10b 1
+!s100 iHhA5I1MNh0aK28o^JaJe0
+R0
+IZCU5HEcU:6@Hk:`jl8^[`2
+R1
+R2
+w1602157540
+8D:/Modelsim/lab3/secondw.v
+FD:/Modelsim/lab3/secondw.v
+!i122 24
+L0 1 92
+R3
+r1
+!s85 0
+31
+!s108 1602157628.000000
+!s107 D:/Modelsim/lab3/secondw.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Modelsim/lab3/secondw.v|
+!i113 1
+R4
+R5

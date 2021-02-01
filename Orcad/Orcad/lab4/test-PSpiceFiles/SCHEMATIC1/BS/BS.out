@@ -1,0 +1,109 @@
+
+**** 12/30/20 11:11:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-BS"  [ D:\Orcad\lab4\test-PSpiceFiles\SCHEMATIC1\BS.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "BS.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TEST
+I_I1         0 N00174 DC 1  
+R_R0         0 N00174  1 TC=0,0 
+R_R1         N00201 N00174  1 TC=0,0 
+G_G1         N00201 0 N01234 N00174 1
+R_R3         0 N00201  1 TC=0,0 
+L_L1         0 N00174  1  
+C_C1         N00174 N01234  1  TC=0,0 
+R_R2         0 N01234  1 TC=0,0 
+
+**** RESUMING BS.cir ****
+.END
+
+**** 12/30/20 11:11:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-BS"  [ D:\Orcad\lab4\test-PSpiceFiles\SCHEMATIC1\BS.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00174)    0.0000 (N00201)    0.0000 (N01234)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 12/30/20 11:11:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-BS"  [ D:\Orcad\lab4\test-PSpiceFiles\SCHEMATIC1\BS.sim ] 
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED CURRENT SOURCES
+
+
+NAME         G_G1      
+I-SOURCE     0.000E+00
+
+          JOB CONCLUDED
+
+**** 12/30/20 11:11:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-BS"  [ D:\Orcad\lab4\test-PSpiceFiles\SCHEMATIC1\BS.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

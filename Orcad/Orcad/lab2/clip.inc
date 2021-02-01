@@ -1,0 +1,1 @@
+.PRINT DC I(D_D2) V([Mid]) V(D_D2)

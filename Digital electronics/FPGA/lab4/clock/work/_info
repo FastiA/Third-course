@@ -1,0 +1,99 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FPGA/lab4/clock
+vclock
+Z1 !s110 1608894062
+!i10b 1
+!s100 PHoheehS4]K]BhUl?b0M42
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I2@nDzzef[A2[3e:49dBR=1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1599132482
+8clock.v
+Fclock.v
+!i122 0
+L0 1 103
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1608894061.000000
+!s107 clock_tb.v|clock.v|counter.v|dec_7seg.v|
+Z7 !s90 -reportprogress|300|dec_7seg.v|counter.v|clock.v|clock_tb.v|
+!i113 1
+Z8 tCvgOpt 0
+vclock_tb
+R1
+!i10b 1
+!s100 7e1AO:]ccg<PkjlDZf16_2
+R2
+I?;zdObHi`m30bzg<J@Czl0
+R3
+R0
+R4
+8clock_tb.v
+Fclock_tb.v
+!i122 0
+L0 3 38
+R5
+r1
+!s85 0
+31
+R6
+Z9 !s107 clock_tb.v|clock.v|counter.v|dec_7seg.v|
+R7
+!i113 1
+R8
+vcounter
+R1
+!i10b 1
+!s100 h0h236DgBzAiKhD446<@m3
+R2
+IFl;C?f1AXYR6aG^8f]nUT1
+R3
+R0
+R4
+8counter.v
+Fcounter.v
+!i122 0
+L0 1 41
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+vdec_7seg
+R1
+!i10b 1
+!s100 D0KlNbm_BHdS`O<NLmEC[1
+R2
+IEa=hIPh`05[^fU]f9_4@h2
+R3
+R0
+R4
+8dec_7seg.v
+Fdec_7seg.v
+!i122 0
+L0 1 32
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8

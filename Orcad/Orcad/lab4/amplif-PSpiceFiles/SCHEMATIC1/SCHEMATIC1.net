@@ -1,0 +1,10 @@
+* source AMPLIF
+V_Vcc         VCC 0 DC 10V  
+R_Rb1         N00372 VCC  10k TC=0,0 
+R_Rc         N00232 VCC  1k TC=0,0 
+R_RL         0 OUT  1k TC=0,0 
+R_Rb2         0 N00372 Rbmod 720
+Q_Q1         N00232 N00372 0 Q2N2222
+C_Cin         N00365 N00372  1u  TC=0,0 
+C_Cout         N00232 OUT  1u  TC=0,0 
+V_Vin         N00365 0 DC 0Vdc AC 1V 

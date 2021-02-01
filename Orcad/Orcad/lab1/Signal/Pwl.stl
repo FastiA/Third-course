@@ -1,0 +1,30 @@
+* C:\Users\bohda\Desktop\Signals\Pwl.stl written on Tue Feb 18 12:57:41 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! Pwl Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 1us
+;!Yrange 0 800n
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Pwl PWL
++ TIME_SCALE_FACTOR = 1
++ VALUE_SCALE_FACTOR = 1
++   ( 0, 0 )
++   ( 2.46e-007, 6.02e-007 )
++   ( 4.07e-007, 6.13e-007 )
++   ( 4.11e-007, 5.46e-007 )
++   ( 4.43e-007, 2.94e-007 )
++   ( 4.47e-007, 5.85e-007 )
++   ( 4.96e-007, 5.33e-007 )
++   ( 5.77e-007, 5.3e-007 )
++   ( 6.58e-007, 3.57e-007 )
++   ( 8.08e-007, 3.08e-007 )
++   ( 8.62e-007, 2.74e-007 )
++   ( 8.74e-007, 2.3e-007 )
++   ( 8.96e-007, 1.76e-007 )
++   ( 9.54e-007, 1.63e-007 )
++   ( 9.94e-007, 1.48e-007 )

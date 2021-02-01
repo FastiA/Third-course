@@ -1,0 +1,13 @@
+* C:\Users\bohda\Desktop\Signals\Sin.stl written on Tue Feb 18 12:59:07 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! Sin Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 40ms
+;!Yrange 0 4
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Sin SIN( 2 2 100 2ms 0 0 )

@@ -1,0 +1,826 @@
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Parametric.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab4-pspicefiles/lab4.lib" 
+.STMLIB "../../../lab4-PSpiceFiles/LAB4.stl" 
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 11 10 100Meg
+.STEP DEC PARAM R1Val 100 10k 10 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB4
+R_R1         IN MID  {R1Val} TC=0,0 
+R_R2         MID VCC  3.3k TC=0,0 
+R_R3         0 MID  3.3k TC=0,0 
+R_R4         0 OUT  5.6k TC=0,0 
+C_C1         MID OUT  0.47u  TC=0,0 
+D_D1         MID VCC D1N3940 
+D_D2         0 MID D1N3940 
+V_V1         VCC 0 5V
+V_V2         IN N00810 DC 0Vdc AC 1V 
+V_V3         N00810 0   STIMULUS=SIN
+.PARAM  r1val=1k
+
+**** RESUMING Parametric.cir ****
+.END
+
+* D:\Orcad\lab4\lab4-PSpiceFiles\LAB4.stl written on Wed Nov 25 12:02:31 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! SIN Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 3ms
+;!Yrange -10 10
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS SIN SIN( 0 10 1KHz 0 0 0 )
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N3940         
+          IS  400.000000E-12 
+           N    1.48         
+          BV  600            
+         IBV  100.000000E-06 
+          RS     .105        
+          TT  800.000000E-09 
+         CJO   19.500000E-12 
+          VJ     .4          
+           M     .38         
+          FC     .9          
+          EG    1.36         
+         XTI   -8            
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =  100   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)     .1429  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.472E-03
+    V_V2         1.429E-03
+    V_V3         1.429E-03
+
+    TOTAL POWER DISSIPATION   7.36E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =  125.89
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)     .1772  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.461E-03
+    V_V2         1.408E-03
+    V_V3         1.408E-03
+
+    TOTAL POWER DISSIPATION   7.31E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =  158.49
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)     .2191  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.449E-03
+    V_V2         1.382E-03
+    V_V3         1.382E-03
+
+    TOTAL POWER DISSIPATION   7.24E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =  199.53
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)     .2697  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.433E-03
+    V_V2         1.352E-03
+    V_V3         1.352E-03
+
+    TOTAL POWER DISSIPATION   7.17E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =  251.19
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)     .3303  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.415E-03
+    V_V2         1.315E-03
+    V_V3         1.315E-03
+
+    TOTAL POWER DISSIPATION   7.08E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =  316.23
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)     .4021  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.393E-03
+    V_V2         1.271E-03
+    V_V3         1.271E-03
+
+    TOTAL POWER DISSIPATION   6.97E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =  398.11
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)     .4859  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.368E-03
+    V_V2         1.221E-03
+    V_V3         1.221E-03
+
+    TOTAL POWER DISSIPATION   6.84E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =  501.19
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)     .5825  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.339E-03
+    V_V2         1.162E-03
+    V_V3         1.162E-03
+
+    TOTAL POWER DISSIPATION   6.69E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =  630.96
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)     .6915  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.306E-03
+    V_V2         1.096E-03
+    V_V3         1.096E-03
+
+    TOTAL POWER DISSIPATION   6.53E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =  794.33
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)     .8124  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.269E-03
+    V_V2         1.023E-03
+    V_V3         1.023E-03
+
+    TOTAL POWER DISSIPATION   6.34E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =    1.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)     .9434  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.229E-03
+    V_V2         9.434E-04
+    V_V3         9.434E-04
+
+    TOTAL POWER DISSIPATION   6.15E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =    1.2589E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)    1.0820  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.187E-03
+    V_V2         8.594E-04
+    V_V3         8.594E-04
+
+    TOTAL POWER DISSIPATION   5.94E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =    1.5849E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)    1.2248  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.144E-03
+    V_V2         7.728E-04
+    V_V3         7.728E-04
+
+    TOTAL POWER DISSIPATION   5.72E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =    1.9953E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)    1.3684  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.100E-03
+    V_V2         6.858E-04
+    V_V3         6.858E-04
+
+    TOTAL POWER DISSIPATION   5.50E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =    2.5119E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)    1.5089  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.058E-03
+    V_V2         6.007E-04
+    V_V3         6.007E-04
+
+    TOTAL POWER DISSIPATION   5.29E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =    3.1623E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)    1.6428  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.017E-03
+    V_V2         5.195E-04
+    V_V3         5.195E-04
+
+    TOTAL POWER DISSIPATION   5.09E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =    3.9811E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)    1.7675  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -9.796E-04
+    V_V2         4.440E-04
+    V_V3         4.440E-04
+
+    TOTAL POWER DISSIPATION   4.90E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =    5.0119E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)    1.8808  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -9.452E-04
+    V_V2         3.753E-04
+    V_V3         3.753E-04
+
+    TOTAL POWER DISSIPATION   4.73E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =    6.3096E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)    1.9818  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -9.146E-04
+    V_V2         3.141E-04
+    V_V3         3.141E-04
+
+    TOTAL POWER DISSIPATION   4.57E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =    7.9433E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)    2.0700  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -8.879E-04
+    V_V2         2.606E-04
+    V_V3         2.606E-04
+
+    TOTAL POWER DISSIPATION   4.44E-03  WATTS
+
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAL =   10.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)    2.1459  (  OUT)    0.0000  (  VCC)    5.0000      
+
+(N00810)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -8.649E-04
+    V_V2         2.146E-04
+    V_V3         2.146E-04
+
+    TOTAL POWER DISSIPATION   4.32E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/30/20 12:54:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Parametric"  [ D:\Orcad\lab4\lab4-pspicefiles\schematic1\parametric.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM R1VAL =   10.0000E+03
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .45
+

@@ -1,0 +1,169 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Modelsim/lab8/code
+vdecoder
+Z1 !s110 1607372467
+!i10b 1
+!s100 Z:Y7nM=bOcR88Ho9c0bPO3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IJ;1`6Yf8fm4]0n06DbC2=2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1607268521
+8decoder.v
+Fdecoder.v
+!i122 10
+L0 1 18
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1607372467.000000
+!s107 MFFSM_tb.v|register.v|decoder.v|rom.v|FSM.v|FFSM.v|MFFSM.v|
+Z6 !s90 -reportprogress|300|MFFSM.v|FFSM.v|FSM.v|rom.v|decoder.v|register.v|MFFSM_tb.v|
+!i113 1
+Z7 tCvgOpt 0
+vFFSM
+R1
+!i10b 1
+!s100 b9fhZONe17b6<i>_<Q^6h3
+R2
+IFn`8fLI@0gN8`8i`PMHSB0
+R3
+R0
+w1607372461
+8FFSM.v
+FFFSM.v
+!i122 10
+L0 1 106
+R4
+r1
+!s85 0
+31
+R5
+Z8 !s107 MFFSM_tb.v|register.v|decoder.v|rom.v|FSM.v|FFSM.v|MFFSM.v|
+R6
+!i113 1
+R7
+n@f@f@s@m
+vFSM
+R1
+!i10b 1
+!s100 DDieb^>mz]MThg2zZ:91]1
+R2
+I7cM<K@a46FzReLLo>ARA62
+R3
+R0
+w1607272075
+8FSM.v
+FFSM.v
+!i122 10
+L0 1 137
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+n@f@s@m
+vMFFSM
+R1
+!i10b 1
+!s100 MS:IU>JF:[FL`8>_1`3aO0
+R2
+I>P<@71LjhneeWXO`aUM]G2
+R3
+R0
+w1607372209
+8MFFSM.v
+FMFFSM.v
+!i122 10
+L0 1 35
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+n@m@f@f@s@m
+vMFFSM_tb
+R1
+!i10b 1
+!s100 GCKb0_j75INMWD8>5eFGi2
+R2
+I[5Ta6bkFbkShMnoKgXZBZ3
+R3
+R0
+w1607372166
+8MFFSM_tb.v
+FMFFSM_tb.v
+!i122 10
+L0 3 50
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+n@m@f@f@s@m_tb
+vregister
+R1
+!i10b 1
+!s100 AlC=COmR6zYF`2z?U`2g]3
+R2
+Iaz^]9OMLn7@[40k^GI^Oo2
+R3
+R0
+w1607268279
+8register.v
+Fregister.v
+!i122 10
+L0 1 13
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+vrom
+R1
+!i10b 1
+!s100 <oSz:]<BQUJ^__j_Zg^BW3
+R2
+IEkn07W_E4kHC;kagK:Af_2
+R3
+R0
+w1607370134
+8rom.v
+From.v
+!i122 10
+L0 1 17
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7

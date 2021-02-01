@@ -1,0 +1,13 @@
+* C:\Projects_ORCAD\lab3\RC-PSpiceFiles\RC.stl written on Tue Nov 10 20:29:33 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! sinRC Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 3ms
+;!Yrange -10 10
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS sinRC SIN( 0 10 1K 0 0 0 )

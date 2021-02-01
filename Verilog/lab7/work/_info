@@ -1,0 +1,101 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Modelsim/lab6
+vCM
+Z0 !s110 1605988543
+!i10b 1
+!s100 ZR4QoJ<A[;T7e7blM?dkT0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I3>zkZLBKGjDDXAYHZeTNC1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/Modelsim/lab7
+w1605988303
+8cm.v
+Fcm.v
+!i122 45
+Z4 L0 1 37
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1605988543.000000
+!s107 testb.v|um.v|main.v|cm.v|
+Z7 !s90 -reportprogress|300|cm.v|main.v|um.v|testb.v|
+!i113 1
+Z8 tCvgOpt 0
+n@c@m
+vmain
+R0
+!i10b 1
+!s100 =2[XIUCI:lDVNA?@20FiW3
+R1
+Io3STMm=eW1[Y[Kk>mBlO?2
+R2
+R3
+w1605985892
+8main.v
+Fmain.v
+!i122 45
+L0 1 23
+R5
+r1
+!s85 0
+31
+R6
+Z9 !s107 testb.v|um.v|main.v|cm.v|
+R7
+!i113 1
+R8
+vtestb
+R0
+!i10b 1
+!s100 U2^lO8ASZ@HY3ziem^1Lz0
+R1
+If3:cO=ZlkB27PZ`MA7nFK2
+R2
+R3
+w1605987042
+8testb.v
+Ftestb.v
+!i122 45
+L0 3 52
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+vUM
+R0
+!i10b 1
+!s100 gm^;4[A9T:Bd^_9?:lP=?3
+R1
+I7G_]<e69fXOdM4ZNlW_4l3
+R2
+R3
+w1605985828
+8um.v
+Fum.v
+!i122 45
+R4
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+n@u@m

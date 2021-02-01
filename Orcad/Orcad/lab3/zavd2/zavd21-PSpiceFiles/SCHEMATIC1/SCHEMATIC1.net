@@ -1,0 +1,10 @@
+* source ZAVD21
+R_R1         IN N00074  {2*ValR3} TC=0,0 
+R_R2         N00074 OUT  {2*ValR3} TC=0,0 
+R_R3         N00127 N00103  {ValR3} TC=0,0 
+C_C1         N00127 N00074  {ValC3}  TC=0,0 
+C_C2         N00103 OUT  {0.5*ValC3}  TC=0,0 
+C_C3         IN N00103  {0.5*ValC3}  TC=0,0 
+V_V1         IN 0 DC 0Vdc AC 1V 
+R_Rn         0 OUT  1k TC=0,0 
+.PARAM  valc3=10n valr3=10k

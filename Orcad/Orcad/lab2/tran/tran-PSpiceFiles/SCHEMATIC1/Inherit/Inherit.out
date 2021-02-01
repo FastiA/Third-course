@@ -1,0 +1,146 @@
+
+**** 10/21/20 13:21:49 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Inherit"  [ d:\orcad\lab2\tran\tran-pspicefiles\schematic1\inherit.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Inherit.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_VB 0 10 0.2 
++ LIN V_VC 0 1 0.05 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TRAN
+Q_Q1         N00148 N00105 0 Q2N2222A
+V_VB         N00105 0 0.5V
+V_VC         N00148 0 10V
+V_VB1         0 N00411 0.5V
+V_VC1         0 N00377 10V
+V_VB2         N00645 0 0.5V
+V_VC2         N00615 0 10V
+Q_Q6         N00377 N00411 0 Q2N2907A
+Q_Q7         N00615 N00645 0 Q2N3904
+Q_Q8         N01361 N01391 0 Q2N3906
+V_VC3         0 N01361 10V
+V_VB3         0 N01391 0.5V
+V_V1         N01557 0 10V
+D_D1         N01557 0 D1N4148 
+
+**** RESUMING Inherit.cir ****
+.END
+
+**** 10/21/20 13:21:49 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Inherit"  [ d:\orcad\lab2\tran\tran-pspicefiles\schematic1\inherit.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+**** 10/21/20 13:21:49 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Inherit"  [ d:\orcad\lab2\tran\tran-pspicefiles\schematic1\inherit.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222A        Q2N2907A        Q2N3904         Q2N3906         
+               NPN             PNP             NPN             PNP             
+       LEVEL    1               1               1               1            
+          IS   14.340000E-15  650.600000E-18    6.734000E-15    1.410000E-15 
+          BF  255.9           231.7           416.4           180.7          
+          NF    1               1               1               1            
+         VAF   74.03          115.7            74.03           18.7          
+         IKF     .2847          1.079            .06678          .08         
+         ISE   14.340000E-15   54.810000E-15    6.734000E-15                 
+          NE    1.307           1.829           1.259                        
+          BR    6.092           3.563            .7371          4.977        
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RB   10              10              10              10            
+          RE    0               0               0               0            
+          RC    1                .715           1               2.5          
+         CJE   22.010000E-12   19.820000E-12    4.493000E-12    8.063000E-12 
+         VJE     .75             .75             .75             .75         
+         MJE     .377            .3357           .2593           .3677       
+         CJC    7.306000E-12   14.760000E-12    3.638000E-12    9.728000E-12 
+         VJC     .75             .75             .75             .75         
+         MJC     .3416           .5383           .3085           .5776       
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          TF  411.100000E-12  603.700000E-12  301.200000E-12  179.300000E-12 
+         XTF    3               1.7             2               6            
+         VTF    1.7             5               4               4            
+         ITF     .6              .65             .4              .4          
+          TR   46.910000E-09  111.300000E-09  239.500000E-09   33.420000E-09 
+         XTB    1.5             1.5             1.5             1.5          
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.42            2.2          
+           D     .87             .52             .87             .52         
+
+
+
+          JOB CONCLUDED
+
+**** 10/21/20 13:21:49 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Inherit"  [ d:\orcad\lab2\tran\tran-pspicefiles\schematic1\inherit.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .25
+

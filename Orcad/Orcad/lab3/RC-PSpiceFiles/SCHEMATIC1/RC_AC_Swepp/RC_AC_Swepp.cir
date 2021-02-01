@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-RC_AC_Swepp"  [ D:\Orcad\lab3\rc-pspicefiles\schematic1\rc_ac_swepp.sim ] 
+
+** Creating circuit file "RC_AC_Swepp.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../RC-PSpiceFiles/RC.stl" 
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 11 10 10Meg
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

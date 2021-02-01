@@ -1,0 +1,78 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Modelsim/lab8
+vcounter
+Z0 !s110 1607947490
+!i10b 1
+!s100 _b8;0I_h_G20zH<YEK@XH1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ICPTHP<?b0JazCeTgnki?g2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/Modelsim/KR
+w1607947278
+8counter.v
+Fcounter.v
+!i122 35
+L0 1 20
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1607947490.000000
+!s107 testb1.v|counter.v|
+Z6 !s90 -reportprogress|300|counter.v|testb1.v|
+!i113 1
+Z7 tCvgOpt 0
+vtest
+!s110 1607947375
+!i10b 1
+!s100 JI@K@4]4Ec<aN=gNNNZhO3
+R1
+I69VWg^HP>V5M2<Pfk4EiY3
+R2
+R3
+w1607945063
+8D:/Modelsim/KR/test.v
+FD:/Modelsim/KR/test.v
+!i122 32
+L0 3 39
+R4
+r1
+!s85 0
+31
+!s108 1607947375.000000
+!s107 D:/Modelsim/KR/test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Modelsim/KR/test.v|
+!i113 1
+o-work work
+R7
+vtestb1
+R0
+!i10b 1
+!s100 eOoeH<No9d11o]:DYBTkG0
+R1
+InM72i9e;80XM@^0MUk`C32
+R2
+R3
+w1607947307
+8testb1.v
+Ftestb1.v
+!i122 35
+L0 3 41
+R4
+r1
+!s85 0
+31
+R5
+Z8 !s107 testb1.v|counter.v|
+R6
+!i113 1
+R7

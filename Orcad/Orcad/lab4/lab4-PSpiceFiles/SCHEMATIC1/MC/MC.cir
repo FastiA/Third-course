@@ -1,0 +1,22 @@
+** Profile: "SCHEMATIC1-MC"  [ D:\Orcad\lab4\lab4-PSpiceFiles\SCHEMATIC1\MC.sim ] 
+
+** Creating circuit file "MC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab4-pspicefiles/lab4.lib" 
+.STMLIB "../../../lab4-PSpiceFiles/LAB4.stl" 
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM P 0 5 0.1 
+.MC 10 DC I(V_Meter) YMAX OUTPUT ALL 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

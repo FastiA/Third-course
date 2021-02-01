@@ -1,0 +1,9 @@
+.ALIASES
+R_R0            R0(1=0 2=N00151 ) CN @MKR.SCHEMATIC1(sch_1):INS74@ANALOG.R.Normal(chips)
+R_R1            R1(1=0 2=N00151 ) CN @MKR.SCHEMATIC1(sch_1):INS90@ANALOG.R.Normal(chips)
+I_I1            I1(+=0 -=N00151 ) CN @MKR.SCHEMATIC1(sch_1):INS131@SOURCE.IDC.Normal(chips)
+C_C1            C1(1=N00151 2=N00237 ) CN @MKR.SCHEMATIC1(sch_1):INS214@ANALOG.C.Normal(chips)
+G_G1            G1(3=0 4=N00237 1=N00237 2=N00151 ) CN @MKR.SCHEMATIC1(sch_1):INS256@ANALOG.G.Normal(chips)
+L_L1            L1(1=0 2=N00237 ) CN @MKR.SCHEMATIC1(sch_1):INS289@ANALOG.L.Normal(chips)
+R_R2            R2(1=N00237 2=0 ) CN @MKR.SCHEMATIC1(sch_1):INS358@ANALOG.R.Normal(chips)
+.ENDALIASES

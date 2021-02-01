@@ -1,0 +1,11 @@
+* source PRESS_SENSOR
+R_R5         N00285 N00281  2k TC=0,0 
+R_R6         N00206 0  470 TC=0,0 
+R_R7         N00199 N00206  25 TC=0,0 
+R_R1         N00267 N00206 Rmonte1 1k
+R_R2         N00285 N00206 Rmonte1 1k
+R_R3         0 N00285 RTherm {1k*(1+P*Pcoeff/Pnom)}
+R_R4         0 N00267 Rmonte1 1k
+V_V1         N00199 0 DC 1.35V  
+V_Meter         N00267 N00281   
+.PARAM  p=0 pcoeff=-0.06 pnom=1

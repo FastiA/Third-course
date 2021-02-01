@@ -1,0 +1,13 @@
+* C:\Users\bohda\Desktop\Signals\Modul.stl written on Tue Feb 18 13:02:35 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! Modul Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 30ms
+;!Yrange 0 4
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Modul SFFM( 2 2 100 1 200 )

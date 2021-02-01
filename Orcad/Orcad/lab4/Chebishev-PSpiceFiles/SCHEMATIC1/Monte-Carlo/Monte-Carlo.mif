@@ -1,0 +1,4 @@
+ lib=D:\Orcad\lab4\chebishev-pspicefiles\chebishev.lib, offset=42, size=29
+ lib=D:\Orcad\lab4\chebishev-pspicefiles\chebishev.lib, offset=72, size=29
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\lin_tech.lib, offset=70155, size=85
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\lin_tech.lib, offset=216326, size=830

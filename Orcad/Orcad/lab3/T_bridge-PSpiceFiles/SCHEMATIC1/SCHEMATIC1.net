@@ -1,0 +1,10 @@
+* source T_BRIDGE
+R_R1         IN N00173  {2*ValR3} TC=0,0 
+R_R2         N00173 OUT  {2*ValR3} TC=0,0 
+R_R3         0 N00166  {ValR3} TC=0,0 
+R_Rn         0 OUT  1k TC=0,0 
+C_C1         IN N00166  {0.5*ValC3}  TC=0,0 
+C_C2         N00166 OUT  {0.5*ValC3}  TC=0,0 
+C_C3         0 N00173  {ValC3}  TC=0,0 
+V_V1         IN 0 DC 0Vdc AC 1V 
+.PARAM  valc3=1u valr3=100k

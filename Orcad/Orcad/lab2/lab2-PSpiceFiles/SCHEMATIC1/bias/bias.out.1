@@ -1,0 +1,174 @@
+
+**** 10/21/20 13:19:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ d:\orcad\lab2\lab2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.INC "../../../clip.inc" 
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+
+**** INCLUDING clip.inc ****
+.PRINT DC I(D_D2) V([Mid]) V(D_D2)
+
+**** RESUMING bias.cir ****
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.TF V([MID]) V_Vin
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB2
+R_R2         MID VCC  3.3k TC=0,0 
+R_R3         0 MID  3.3k TC=0,0 
+R_R4         0 OUT  5.5k TC=0,0 
+C_C1         MID OUT  0.47u  TC=0,0 
+D_D1         MID VCC D1N3940 
+D_D2         0 ICB D1N3940 
+R_R1         IN MID  1k TC=0,0 
+V_V1         VCC 0 5V
+V_Vin         IN 0 0V
+V_PRINT1         MID ICB 0V
+         
+.PRINT        DC I(V_PRINT1) 
+          
+.PRINT         DC V([MID]) 
+          
+.PRINT         DC V([0],[ICB]) 
+
+**** RESUMING bias.cir ****
+.END
+
+**** 10/21/20 13:19:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ d:\orcad\lab2\lab2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N3940         
+          IS  400.000000E-12 
+           N    1.48         
+          BV  600            
+         IBV  100.000000E-06 
+          RS     .105        
+          TT  800.000000E-09 
+         CJO   19.500000E-12 
+          VJ     .4          
+           M     .38         
+          FC     .9          
+          EG    1.36         
+         XTI   -8            
+
+
+**** 10/21/20 13:19:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ d:\orcad\lab2\lab2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  ICB)     .9434  (  Mid)     .9434  (  OUT)    0.0000      
+
+(  VCC)    5.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.229E-03
+    V_Vin        9.434E-04
+    V_PRINT1     4.009E-10
+
+    TOTAL POWER DISSIPATION   6.15E-03  WATTS
+
+
+**** 10/21/20 13:19:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ d:\orcad\lab2\lab2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** DIODES
+
+
+NAME         D_D1        D_D2      
+MODEL        D1N3940     D1N3940   
+ID          -4.04E-10   -4.01E-10 
+VD          -4.06E+00   -9.43E-01 
+REQ          1.00E+12    1.00E+12 
+CAP          7.80E-12    1.23E-11 
+
+
+
+
+ ****     SMALL-SIGNAL CHARACTERISTICS
+
+
+      V(MID)/V_Vin =  6.226E-01
+
+      INPUT RESISTANCE AT V_Vin =  2.650E+03
+
+      OUTPUT RESISTANCE AT V(MID) =  6.226E+02
+
+
+          JOB CONCLUDED
+
+**** 10/21/20 13:19:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ d:\orcad\lab2\lab2-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

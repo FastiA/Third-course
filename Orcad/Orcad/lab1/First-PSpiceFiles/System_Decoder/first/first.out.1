@@ -1,0 +1,153 @@
+
+**** 09/23/20 11:58:11 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "System_Decoder-first"  [ D:\Orcad\lab1\first-pspicefiles\system_decoder\first.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "first.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.INC "../../../text1.inc" 
+
+**** INCLUDING text1.inc ****
+.PARAM Val=210
+.PARAM Vali=1130pF
+
+**** RESUMING first.cir ****
+.STMLIB "D:/Orcad/signals/reset.stl" 
+.STMLIB "../../../first-pspicefiles/first.stl" 
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN/OP  0 10us 0 
+.STEP PARAM Val LIST 205 210 215 
+.TEMP 0 27 125
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\System_Decoder.net" 
+
+
+
+**** INCLUDING System_Decoder.net ****
+* source FIRST
+X_U1         N03711 N03711 HEEL N00470 N00432 N00444 OUT1 OUT2 OUT3 OUT4 OUT5
++  OUT6 OUT7 OUT8 OUT9 OUT10 OUT11 OUT12 OUT13 OUT14 OUT15 OUT16 $G_DPWR $G_DGND
++  74154 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2         N03656 HEEL N03711 N03711 HEEL N00470 N00432 N00444 $G_DPWR
++  $G_DGND 7493A PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_B1_B1U1         N03656 M_UN0001 N03711 N03711 FCLK2 M_UN0002 M_UN0003
++  M_UN0004 $G_DPWR $G_DGND 7493A PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_B1_B1U2A         N03711 B1_N00450 $G_DPWR $G_DGND 7405 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_B1_B1U3A         B1_N00450 B1_N00460 $G_DPWR $G_DGND 7414 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_B1_B1U3B         B1_N00460 B1_N00464 $G_DPWR $G_DGND 7414 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_B1_B1U3C         B1_N00464 N03656 $G_DPWR $G_DGND 7414 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+C_B1_B1C1         B1_N00450 B1_N00464  {Vali}  TC=0,0 
+R_B1_B1R1         B1_N00450 B1_N00460  {Val} TC=0,0 
+U_DSTM1         STIM(1,0) $G_DPWR $G_DGND N03711 IO_STM STIMULUS=Reset
+
+**** RESUMING first.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node B1_N00450
+*
+* Moving X_B1_B1U3A.U1:IN1 from analog node B1_N00450 to new digital node B1_N00450$AtoD
+X$B1_N00450_AtoD1
++ B1_N00450
++ B1_N00450$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD_ST
++       PARAMS: CAPACITANCE=   0     
+* Moving X_B1_B1U2A.U1:OUT1 from analog node B1_N00450 to new digital node B1_N00450$DtoA
+X$B1_N00450_DtoA1
++ B1_N00450$DtoA
++ B1_N00450
++ $G_DPWR
++ $G_DGND
++ DtoA_STD_OC
++       PARAMS: DRVH=   1.0000E+06 DRVL= 104    CAPACITANCE=   0     
+*
+* Analog/Digital interface for node B1_N00464
+*
+* Moving X_B1_B1U3C.U1:IN1 from analog node B1_N00464 to new digital node B1_N00464$AtoD
+X$B1_N00464_AtoD1
++ B1_N00464
++ B1_N00464$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD_ST
++       PARAMS: CAPACITANCE=   0     
+* Moving X_B1_B1U3B.U1:OUT1 from analog node B1_N00464 to new digital node B1_N00464$DtoA
+X$B1_N00464_DtoA1
++ B1_N00464$DtoA
++ B1_N00464
++ $G_DPWR
++ $G_DGND
++ DtoA_STD
++       PARAMS: DRVH=  96.4   DRVL= 104    CAPACITANCE=   0     
+*
+* Analog/Digital interface for node B1_N00460
+*
+* Moving X_B1_B1U3B.U1:IN1 from analog node B1_N00460 to new digital node B1_N00460$AtoD
+X$B1_N00460_AtoD1
++ B1_N00460
++ B1_N00460$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD_ST
++       PARAMS: CAPACITANCE=   0     
+* Moving X_B1_B1U3A.U1:OUT1 from analog node B1_N00460 to new digital node B1_N00460$DtoA
+X$B1_N00460_DtoA1
++ B1_N00460$DtoA
++ B1_N00460
++ $G_DPWR
++ $G_DGND
++ DtoA_STD
++       PARAMS: DRVH=  96.4   DRVL= 104    CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$DIGIFPWR 0 DIGIFPWR
+
+
+
+ERROR(ORPSIM-15049): Only one .TEMP value allowed with .STEP
+* C:\Users\bohda\Desktop\Signals\Reset.stl written on Tue Feb 18 13:38:39 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! Reset Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 1us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Reset STIM (1, 1)
++   +0s 0
++   1fs 1
++   100.000001ns 0
+

@@ -1,0 +1,296 @@
+
+**** 12/30/20 12:44:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MonteCarlo"  [ D:\Orcad\lab4\amplif-pspicefiles\schematic1\montecarlo.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "MonteCarlo.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../amplif-pspicefiles/amplif.lib" 
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC LIN 20 90k 110k
+.WCASE AC V([[Out]]) YMAX RANGE(90k,110k)  OUTPUT ALL VARY DEV  HI 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source AMPLIF
+V_Vcc         VCC 0 DC 10V  
+R_Rb1         N00372 VCC  10k TC=0,0 
+R_Rc         N00232 VCC  1k TC=0,0 
+R_RL         0 OUT  1k TC=0,0 
+R_Rb2         0 N00372 Rbmod 720
+Q_Q1         N00232 N00372 0 Q2N2222
+C_Cin         N00365 N00372  1u  TC=0,0 
+C_Cout         N00232 OUT  1u  TC=0,0 
+V_Vin         N00365 0 DC 0Vdc AC 1V 
+
+**** RESUMING MonteCarlo.cir ****
+.END
+
+**** 12/30/20 12:44:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MonteCarlo"  [ D:\Orcad\lab4\amplif-pspicefiles\schematic1\montecarlo.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+       LEVEL    1            
+          IS   14.340000E-15 
+          BF  255.9          
+          NF    1            
+         VAF   74.03         
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC    1            
+         CJE   22.010000E-12 
+         VJE     .75         
+         MJE     .377        
+         CJC    7.306000E-12 
+         VJC     .75         
+         MJC     .3416       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 12/30/20 12:44:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MonteCarlo"  [ D:\Orcad\lab4\amplif-pspicefiles\schematic1\montecarlo.sim ] 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Rbmod           
+           R    1            
+
+
+**** 12/30/20 12:44:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MonteCarlo"  [ D:\Orcad\lab4\amplif-pspicefiles\schematic1\montecarlo.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY NOMINAL
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  Out)    0.0000  (  VCC)   10.0000  (N00232)    7.8639 (N00365)    0.0000     
+
+(N00372)     .6633 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vcc       -3.070E-03
+    V_Vin        0.000E+00
+
+    TOTAL POWER DISSIPATION   3.07E-02  WATTS
+
+
+**** 12/30/20 12:44:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MonteCarlo"  [ D:\Orcad\lab4\amplif-pspicefiles\schematic1\montecarlo.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY R_RB2 RBMOD R
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  Out)    0.0000  (  VCC)   10.0000  (N00232)    7.8255 (N00365)    0.0000     
+
+(N00372)     .6638 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vcc       -3.108E-03
+    V_Vin        0.000E+00
+
+    TOTAL POWER DISSIPATION   3.11E-02  WATTS
+
+
+**** 12/30/20 12:44:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MonteCarlo"  [ D:\Orcad\lab4\amplif-pspicefiles\schematic1\montecarlo.sim ] 
+
+
+ ****     SORTED DEVIATIONS OF V(Out)      TEMPERATURE =   27.000 DEG C
+
+                      SENSITIVITY SUMMARY
+
+******************************************************************************
+
+
+
+The range is  ( 9.00000E+04 to  1.10000E+05)
+
+
+Mean Deviation =     .7051
+Sigma          =    0     
+
+ RUN                    MAX DEVIATION FROM NOMINAL
+
+R_RB2 RBMOD R            .7051  higher  at F =   92.1050E+03
+                        (  17.501% change per 1% change in Model Parameter)
+
+
+**** 12/30/20 12:44:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MonteCarlo"  [ D:\Orcad\lab4\amplif-pspicefiles\schematic1\montecarlo.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+                      WORST CASE ALL DEVICES
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  Out)    0.0000  (  VCC)   10.0000  (N00232)    5.3682 (N00365)    0.0000     
+
+(N00372)     .6845 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vcc       -5.563E-03
+    V_Vin        0.000E+00
+
+    TOTAL POWER DISSIPATION   5.56E-02  WATTS
+
+
+**** 12/30/20 12:44:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MonteCarlo"  [ D:\Orcad\lab4\amplif-pspicefiles\schematic1\montecarlo.sim ] 
+
+
+ ****     UPDATED MODEL PARAMETERS         TEMPERATURE =   27.000 DEG C
+
+                      WORST CASE ALL DEVICES
+
+******************************************************************************
+
+
+
+Device       MODEL        PARAMETER    NEW VALUE    
+R_Rb2        Rbmod        R               1.05          (Increased)  
+    
+
+**** 12/30/20 12:44:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MonteCarlo"  [ D:\Orcad\lab4\amplif-pspicefiles\schematic1\montecarlo.sim ] 
+
+
+ ****     SORTED DEVIATIONS OF V(Out)      TEMPERATURE =   27.000 DEG C
+
+                      WORST CASE SUMMARY
+
+******************************************************************************
+
+
+
+The range is  ( 9.00000E+04 to  1.10000E+05)
+
+
+Mean Deviation =   44.543
+Sigma          =    0     
+
+ RUN                    MAX DEVIATION FROM NOMINAL
+
+WORST CASE ALL DEVICES
+                        44.543  higher  at F =   97.3680E+03
+                        ( 210.57% of Nominal)
+
+
+
+          JOB CONCLUDED
+
+**** 12/30/20 12:44:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MonteCarlo"  [ D:\Orcad\lab4\amplif-pspicefiles\schematic1\montecarlo.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

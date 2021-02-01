@@ -1,0 +1,159 @@
+
+**** 12/02/20 13:17:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-ACsweep"  [ D:\Orcad\lab2\lab2-pspicefiles\schematic1\acsweep.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ACsweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "D:\Orcad\lab2\lab2-pspicefiles\schematic1\ACsweep\ACsweep_profile.inc" 
+* Local Libraries :
+
+**** INCLUDING ACsweep_profile.inc ****
+.STMLIB ".\dcsweep.stl" 
+
+**** RESUMING ACsweep.cir ****
+.INC "../../../clip.inc" 
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+
+**** INCLUDING clip.inc ****
+.PRINT DC I(D_D2) V([Mid]) V(D_D2)
+
+**** RESUMING ACsweep.cir ****
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 11 10 100Meg
+.NOISE V([OUT]) V_Vin 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB2
+R_R2         MID VCC  3.3k TC=0,0 
+R_R3         0 MID  3.3k TC=0,0 
+R_R4         0 OUT  5.5k TC=0,0 
+C_C1         MID OUT  0.47u  TC=0,0 
+D_D1         MID VCC D1N3940 
+D_D2         0 ICB D1N3940 
+R_R1         IN MID  1k TC=0,0 
+V_V1         VCC 0 5V
+V_PRINT1         MID ICB 0V
+         
+.PRINT        DC I(V_PRINT1) 
+          
+.PRINT         DC V([MID]) 
+          
+.PRINT         DC V([0],[ICB]) 
+V_V2         N04672 0   STIMULUS=Sin
+V_Vin         IN N04672 DC 0Vdc AC 1V 
+
+**** RESUMING ACsweep.cir ****
+.END
+
+* d:\orcad\lab2\lab2-PSpiceFiles\SCHEMATIC1\dcsweep\dcsweep.stl written on Wed Oct 28 10:46:01 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! Sin Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 3ms
+;!Yrange -10 10
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Sin SIN( 0 10 1K 0 0 0 )
+
+**** 12/02/20 13:17:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-ACsweep"  [ D:\Orcad\lab2\lab2-pspicefiles\schematic1\acsweep.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N3940         
+          IS  400.000000E-12 
+           N    1.48         
+          BV  600            
+         IBV  100.000000E-06 
+          RS     .105        
+          TT  800.000000E-09 
+         CJO   19.500000E-12 
+          VJ     .4          
+           M     .38         
+          FC     .9          
+          EG    1.36         
+         XTI   -8            
+
+
+**** 12/02/20 13:17:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-ACsweep"  [ D:\Orcad\lab2\lab2-pspicefiles\schematic1\acsweep.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  ICB)     .9434  (  Mid)     .9434  (  OUT)    0.0000      
+
+(  VCC)    5.0000  (N04672)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.229E-03
+    V_PRINT1     4.009E-10
+    V_V2         9.434E-04
+    V_Vin        9.434E-04
+
+    TOTAL POWER DISSIPATION   6.15E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/02/20 13:17:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-ACsweep"  [ D:\Orcad\lab2\lab2-pspicefiles\schematic1\acsweep.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .08
+

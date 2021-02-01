@@ -1,0 +1,91 @@
+
+**** 12/02/20 13:14:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-LPF_AC_Sweep"  [ D:\Orcad\lab3\t_bridge-pspicefiles\schematic1\lpf_ac_sweep.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "LPF_AC_Sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 11 10 10Meg
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source T_BRIDGE
+R_R1         IN N00173  {2*ValR3} TC=0,0 
+R_R2         N00173 OUT  {2*ValR3} TC=0,0 
+R_R3         0 N00166  {ValR3} TC=0,0 
+R_Rn         0 OUT  1k TC=0,0 
+C_C1         IN N00166  {0.5*ValC3}  TC=0,0 
+C_C2         N00166 OUT  {0.5*ValC3}  TC=0,0 
+C_C3         0 N00173  {ValC3}  TC=0,0 
+V_V1         IN 0 DC 0Vdc AC 1V 
+.PARAM  valc3=1u valr3=100k
+
+**** RESUMING LPF_AC_Sweep.cir ****
+.END
+
+**** 12/02/20 13:14:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-LPF_AC_Sweep"  [ D:\Orcad\lab3\t_bridge-pspicefiles\schematic1\lpf_ac_sweep.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (N00166)    0.0000 (N00173)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/02/20 13:14:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-LPF_AC_Sweep"  [ D:\Orcad\lab3\t_bridge-pspicefiles\schematic1\lpf_ac_sweep.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

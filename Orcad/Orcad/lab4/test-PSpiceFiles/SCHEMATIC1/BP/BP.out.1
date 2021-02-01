@@ -1,0 +1,50 @@
+
+**** 12/28/20 13:52:08 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-BP"  [ D:\Orcad\lab4\test-PSpiceFiles\SCHEMATIC1\BP.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "BP.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TEST
+I_I1         N00192 N00174 DC 1  
+R_R1         N00192 N00174  1 TC=0,0 
+R_R2         N00192 N00239  1 TC=0,0 
+R_R3         N00192 N00174  1 TC=0,0 
+C_C1         N00174 N00239  1  TC=0,0 
+L_L1         N00192 N00239  1H  
+G_G1         N00192 N00239 N00239 N00174 1
+
+**** RESUMING BP.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00192 is floating
+
+ERROR(ORPSIM-15142): Node N00174 is floating
+
+ERROR(ORPSIM-15142): Node N00239 is floating
+

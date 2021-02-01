@@ -1,0 +1,55 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FPGA/lab5/simple_pwm
+vsimple_pwm
+Z1 !s110 1609885255
+!i10b 1
+!s100 U74W0@]70eVJRa7KmGOln0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I8?jOCS<^dozOF8VdYTDJ52
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1609853495
+8simple_pwm.v
+Fsimple_pwm.v
+!i122 0
+L0 1 29
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1609885255.000000
+!s107 simple_pwm_tb.v|simple_pwm.v|
+Z6 !s90 -reportprogress|300|simple_pwm.v|simple_pwm_tb.v|
+!i113 1
+Z7 tCvgOpt 0
+vtestbench
+R1
+!i10b 1
+!s100 GC1=o^UZ0o9T<SJo4R>;X3
+R2
+IemLom4AmzIfVUAT;`mOgZ2
+R3
+R0
+w1609840427
+8simple_pwm_tb.v
+Fsimple_pwm_tb.v
+!i122 0
+L0 3 40
+R4
+r1
+!s85 0
+31
+R5
+Z8 !s107 simple_pwm_tb.v|simple_pwm.v|
+R6
+!i113 1
+R7

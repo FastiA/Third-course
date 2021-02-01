@@ -1,0 +1,57 @@
+Date and Time : 05/27/20 15:21:31
+
+--------------------------------------------------
+Checking Schematic: System_Decoder
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+WARNING(ORCAP-1600): Net has fewer than two connections OUT2 
+                    System_Decoder, PAGE1  (4.50, 0.90) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT11 
+                    System_Decoder, PAGE1  (5.00, 1.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT7 
+                    System_Decoder, PAGE1  (5.00, 1.40) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT5 
+                    System_Decoder, PAGE1  (5.00, 1.20) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT13 
+                    System_Decoder, PAGE1  (5.00, 2.00) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT15 
+                    System_Decoder, PAGE1  (5.00, 2.20) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT8 
+                    System_Decoder, PAGE1  (5.00, 1.50) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT10 
+                    System_Decoder, PAGE1  (5.00, 1.70) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT4 
+                    System_Decoder, PAGE1  (5.00, 1.10) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT3 
+                    System_Decoder, PAGE1  (5.00, 1.00) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT12 
+                    System_Decoder, PAGE1  (5.00, 1.90) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT1 
+                    System_Decoder, PAGE1  (4.50, 0.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT9 
+                    System_Decoder, PAGE1  (5.00, 1.60) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT14 
+                    System_Decoder, PAGE1  (5.00, 2.10) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT16 
+                    System_Decoder, PAGE1  (5.00, 2.30) 
+WARNING(ORCAP-1600): Net has fewer than two connections FCLK2 
+                    System_Decoder, PAGE1  (2.10, 1.60) 
+WARNING(ORCAP-1600): Net has fewer than two connections OUT6 
+                    System_Decoder, PAGE1  (5.00, 1.30) 
+
+Checking For Unconnected Bus Nets
+
+--------------------------------------------------
+Checking Schematic: OSC
+--------------------------------------------------
+Checking Electrical Rules 
+WARNING(ORCAP-1831): Unconnected pin B1U1,CKB 
+                    OSC, OSC  (4.20, 1.10) 
+WARNING(ORCAP-1608): Net has no driving source $D_LO 
+                    System_Decoder, PAGE1  (3.70, 0.80) 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets

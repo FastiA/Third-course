@@ -1,0 +1,13 @@
+* D:\Orcad\lab3\zavd2\zavd2-PSpiceFiles\ZAVD2.stl written on Tue Nov 24 13:23:21 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! SIN Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 3ms
+;!Yrange -10 10
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS SIN SIN( 0 10 1KHz 0 0 0 )

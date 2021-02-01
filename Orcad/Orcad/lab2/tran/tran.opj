@@ -1,0 +1,141 @@
+(ExpressProject "tran"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\tran.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\tran-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tran-pspicefiles\schematic1\inherit.sim"
+        (DisplayName "SCHEMATIC1-Inherit")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tran-pspicefiles\schematic1\tran2.sim"
+        (DisplayName "SCHEMATIC1-tran2")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tran-pspicefiles\schematic1\tran3.sim"
+        (DisplayName "SCHEMATIC1-tran3")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tran-pspicefiles\schematic1\tran4.sim"
+        (DisplayName "SCHEMATIC1-tran4")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tran-pspicefiles\schematic1\diode.sim"
+        (DisplayName "SCHEMATIC1-diode")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\tran-pspicefiles\schematic1\inherit.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (D1N4148
+      (FullPartName "D1N4148.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (Q2N3906
+      (FullPartName "Q2N3906.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (Q2N3904
+      (FullPartName "Q2N3904.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (Q2N2907A
+      (FullPartName "Q2N2907A.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (Q2N2222A
+      (FullPartName "Q2N2222A.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_17.2\tools\capture\library\pspice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -34 0 200 0 408"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -34 0 1368 0 450")
+        (Scroll "119 274")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "D:\ORCAD\LAB2\TRAN\TRAN.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -34 0 1662 0 450")
+        (Scroll "119 346")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "D:\ORCAD\LAB2\TRAN\TRAN.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE2"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -34 26 1688 29 479")
+        (Scroll "60 334")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "D:\ORCAD\LAB2\TRAN\TRAN.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE3"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -34 52 1714 58 508")
+        (Scroll "260 320")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "D:\ORCAD\LAB2\TRAN\TRAN.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE4"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -34 78 1446 87 537")
+        (Scroll "0 342")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "D:\ORCAD\LAB2\TRAN\TRAN.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE5")))
+  (MPSSessionName "bohda"))

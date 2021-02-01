@@ -1,0 +1,55 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FPGA/lab2
+vtestbench
+Z1 !s110 1603965909
+!i10b 1
+!s100 BcP=`fh<8W]2Y4Yo7z7@b1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I74=HK<88=WoS8CJR:QUhC2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1599132482
+8triangle_gen_tb.v
+Ftriangle_gen_tb.v
+!i122 0
+L0 3 28
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1603965909.000000
+!s107 triangle_gen_tb.v|triangle_gen.v|
+Z7 !s90 -reportprogress|300|triangle_gen.v|triangle_gen_tb.v|
+!i113 1
+Z8 tCvgOpt 0
+vtriangle_gen
+R1
+!i10b 1
+!s100 eRG>zOY`[Aa>Wm26AIE@:2
+R2
+IOIA_mB?_g<YdDc4KzS^Y^2
+R3
+R0
+R4
+8triangle_gen.v
+Ftriangle_gen.v
+!i122 0
+L0 1 33
+R5
+r1
+!s85 0
+31
+R6
+Z9 !s107 triangle_gen_tb.v|triangle_gen.v|
+R7
+!i113 1
+R8

@@ -1,0 +1,12 @@
+* source LAB4
+R_R1         IN MID  {R1Val} TC=0,0 
+R_R2         MID VCC  3.3k TC=0,0 
+R_R3         0 MID  3.3k TC=0,0 
+R_R4         0 OUT  5.6k TC=0,0 
+C_C1         MID OUT  0.47u  TC=0,0 
+D_D1         MID VCC D1N3940 
+D_D2         0 MID D1N3940 
+V_V1         VCC 0 5V
+V_V2         IN N00810 DC 0Vdc AC 1V 
+V_V3         N00810 0   STIMULUS=SIN
+.PARAM  r1val=1k

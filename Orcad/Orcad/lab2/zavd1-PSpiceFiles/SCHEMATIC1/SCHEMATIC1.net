@@ -1,0 +1,6 @@
+* source ZAVD1
+R_R8         N01391 0  1k TC=0,0 
+R_R7         N01391 N01375  1k TC=0,0 
+R_R5         N01365 N01375  1k TC=0,0 
+V_V2         N01365 0 12V
+R_R6         0 N01375  2k TC=0,0 

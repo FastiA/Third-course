@@ -1,0 +1,164 @@
+
+**** 12/02/20 13:45:25 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-gen-Transient"  [ D:\Orcad\lab3\gen-pspicefiles\schematic1\gen-transient.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "gen-Transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\bohda\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 3ms 1ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source GEN
+R_R9         0 N02978  750 TC=0,0 
+Q_Q2         N02834 N02842 N02978 Q2N2222
+R_R7         N02842 N02714  100k TC=0,0 
+R_R5         N02834 N02714  1k TC=0,0 
+R_R8         N02846 N02714  1k TC=0,0 
+C_C5         N02834 N02838  0.01u  TC=0,0 
+R_R6         N02838 N02714  100k TC=0,0 
+Q_Q3         N02846 N02838 N02982 Q2N2222
+C_C6         N02842 N02846  0.01u  TC=0,0 
+R_R10         0 N02982  750 TC=0,0 
+V_V2         N02714 0 10V
+L_L1         OUT N08871  1u IC=53.2uA 
+R_R11         0 N09163  510 TC=0,0 
+R_R12         N09068 N08871  3k TC=0,0 
+R_R13         0 N09068  15k TC=0,0 
+R_R14         OUT N08871  10k TC=0,0 
+Q_Q4         OUT N09068 N09163 Q2N2222
+C_C7         N09163 OUT  10p  TC=0,0 
+C_C8         0 N09163  120p  TC=0,0 
+C_C9         OUT N08871  30p  TC=0,0 
+C_C10         0 N09068  2200p  TC=0,0 
+V_V3         N08871 0 1.5V
+.IC         V(N02834 )=4.851
+.IC         V(OUT )=0.1V
+.IC         V(N09163 )=27.39mV
+.IC         V(N09068 )=597mV
+.PARAM  valr=1k param=1k
+
+**** RESUMING gen-Transient.cir ****
+.END
+
+**** 12/02/20 13:45:25 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-gen-Transient"  [ D:\Orcad\lab3\gen-pspicefiles\schematic1\gen-transient.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+       LEVEL    1            
+          IS   14.340000E-15 
+          BF  255.9          
+          NF    1            
+         VAF   74.03         
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC    1            
+         CJE   22.010000E-12 
+         VJE     .75         
+         MJE     .377        
+         CJC    7.306000E-12 
+         VJC     .75         
+         MJC     .3416       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 12/02/20 13:45:25 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-gen-Transient"  [ D:\Orcad\lab3\gen-pspicefiles\schematic1\gen-transient.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .1000  (N02714)   10.0000 (N02834)    4.8510 (N02838)    4.9519     
+
+(N02842)    5.4147 (N02846)    4.3709 (N02978)    4.7200 (N02982)    4.2597     
+
+(N08871)    1.5000 (N09068)     .5970 (N09163)     .0274 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.087E-02
+    V_V3        -3.878E-04
+
+    TOTAL POWER DISSIPATION   1.09E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/02/20 13:45:25 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-gen-Transient"  [ D:\Orcad\lab3\gen-pspicefiles\schematic1\gen-transient.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .28
+

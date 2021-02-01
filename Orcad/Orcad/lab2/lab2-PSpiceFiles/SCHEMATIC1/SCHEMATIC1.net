@@ -1,0 +1,18 @@
+* source LAB2
+R_R2         MID VCC  3.3k TC=0,0 
+R_R3         0 MID  3.3k TC=0,0 
+R_R4         0 OUT  5.5k TC=0,0 
+C_C1         MID OUT  0.47u  TC=0,0 
+D_D1         MID VCC D1N3940 
+D_D2         0 ICB D1N3940 
+R_R1         IN MID  1k TC=0,0 
+V_V1         VCC 0 5V
+V_PRINT1         MID ICB 0V
+         
+.PRINT        DC I(V_PRINT1) 
+          
+.PRINT         DC V([MID]) 
+          
+.PRINT         DC V([0],[ICB]) 
+V_V2         N04672 0   STIMULUS=Sin
+V_Vin         IN N04672 DC 0Vdc AC 1V 

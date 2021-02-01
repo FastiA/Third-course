@@ -1,0 +1,28 @@
+* source GEN
+R_R9         0 N02978  750 TC=0,0 
+Q_Q2         N02834 N02842 N02978 Q2N2222
+R_R7         N02842 N02714  100k TC=0,0 
+R_R5         N02834 N02714  1k TC=0,0 
+R_R8         N02846 N02714  1k TC=0,0 
+C_C5         N02834 N02838  0.01u  TC=0,0 
+R_R6         N02838 N02714  100k TC=0,0 
+Q_Q3         N02846 N02838 N02982 Q2N2222
+C_C6         N02842 N02846  0.01u  TC=0,0 
+R_R10         0 N02982  750 TC=0,0 
+V_V2         N02714 0 10V
+L_L1         OUT N08871  1u IC=53.2uA 
+R_R11         0 N09163  510 TC=0,0 
+R_R12         N09068 N08871  3k TC=0,0 
+R_R13         0 N09068  15k TC=0,0 
+R_R14         OUT N08871  10k TC=0,0 
+Q_Q4         OUT N09068 N09163 Q2N2222
+C_C7         N09163 OUT  10p  TC=0,0 
+C_C8         0 N09163  120p  TC=0,0 
+C_C9         OUT N08871  30p  TC=0,0 
+C_C10         0 N09068  2200p  TC=0,0 
+V_V3         N08871 0 1.5V
+.IC         V(N02834 )=4.851
+.IC         V(OUT )=0.1V
+.IC         V(N09163 )=27.39mV
+.IC         V(N09068 )=597mV
+.PARAM  valr=1k param=1k

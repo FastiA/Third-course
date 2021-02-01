@@ -1,0 +1,15 @@
+* C:\Users\bohda\Desktop\Signals\Reset.stl written on Tue Feb 18 13:38:39 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! Reset Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 1us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Reset STIM (1, 1)
++   +0s 0
++   1fs 1
++   100.000001ns 0

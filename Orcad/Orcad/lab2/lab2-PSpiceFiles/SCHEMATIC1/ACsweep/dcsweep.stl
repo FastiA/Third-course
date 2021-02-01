@@ -1,0 +1,13 @@
+* d:\orcad\lab2\lab2-PSpiceFiles\SCHEMATIC1\dcsweep\dcsweep.stl written on Wed Oct 28 10:46:01 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! Sin Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 3ms
+;!Yrange -10 10
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Sin SIN( 0 10 1K 0 0 0 )
