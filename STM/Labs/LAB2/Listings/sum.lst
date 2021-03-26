@@ -1,0 +1,74 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             FUNC, CODE, READONLY
+    2 00000000                 EXPORT           sum
+    3 00000000         
+    4 00000000         sum     PROC
+    5 00000000         
+    6 00000000 B530            push             {LR, r4, r5}
+    7 00000002         
+    8 00000002 2914            CMP              r1, #20
+    9 00000004         
+   10 00000004 F04F 0400       mov              r4, #0
+   11 00000008 F04F 0500       mov              r5, #0
+   12 0000000C F04F 0600       mov              r6, #0
+   13 00000010         
+   14 00000010         loop
+   15 00000010 6803            LDR              r3, [r0]
+   16 00000012 18E4            ADDS             r4, r4, r3
+   17 00000014 F155 0500       ADCS             r5, #0
+   18 00000018 F100 0004       ADD              r0, r0, #4
+   19 0000001C F106 0601       ADD              r6, r6, #1
+   20 00000020 428E            CMP              r6, r1
+   21 00000022 D1F5            BNE              loop
+   22 00000024         
+   23 00000024 4620            mov              r0, r4
+   24 00000026 4629            mov              r1, r5
+   25 00000028         
+   26 00000028 BD30            pop              {PC, r4, r5}
+   27 0000002A         
+   28 0000002A                 ENDP
+   29 0000002A         
+   30 0000002A                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
+interwork --depend=.\objects\sum.d -o.\objects\sum.o -IC:\Users\bohda\AppData\L
+ocal\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Incl
+ude -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predefine="__U
+VISION_VERSION SETA 533" --predefine="STM32F407xx SETA 1" --list=.\listings\sum
+.lst sum.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+FUNC 00000000
+
+Symbol: FUNC
+   Definitions
+      At line 1 in file sum.s
+   Uses
+      None
+Comment: FUNC unused
+loop 00000010
+
+Symbol: loop
+   Definitions
+      At line 14 in file sum.s
+   Uses
+      At line 21 in file sum.s
+Comment: loop used once
+sum 00000000
+
+Symbol: sum
+   Definitions
+      At line 4 in file sum.s
+   Uses
+      At line 2 in file sum.s
+Comment: sum used once
+3 symbols
+337 symbols in table

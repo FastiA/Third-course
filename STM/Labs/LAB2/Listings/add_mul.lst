@@ -1,0 +1,84 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             FUNCTION, CODE, READONLY
+    2 00000000                 EXPORT           add_mul
+    3 00000000         
+    4 00000000         add_mul PROC
+    5 00000000         
+    6 00000000 B470            PUSH             {r4, r5, r6}
+    7 00000002         
+    8 00000002 F04F 0400       MOV              r4, #0
+    9 00000006 F04F 0500       MOV              r5, #0
+   10 0000000A F04F 0600       MOV              r6, #0
+   11 0000000E         
+   12 0000000E F1A2 0202       SUB              r2, #2
+   13 00000012 4605            MOV              r5, r0
+   14 00000014 F105 0504       ADD              r5, #4
+   15 00000018         
+   16 00000018         loop
+   17 00000018 6803            LDR              r3, [r0]
+   18 0000001A F100 0008       ADD              r0, #8
+   19 0000001E 6804            LDR              r4, [r0]
+   20 00000020 4423            ADD              r3, r3, r4
+   21 00000022 600B            STR              r3, [r1]
+   22 00000024 F101 0104       ADD              r1, #4
+   23 00000028 F106 0601       ADD              r6, #1
+   24 0000002C         
+   25 0000002C 682B            LDR              r3, [r5]
+   26 0000002E F105 0508       ADD              r5, #8
+   27 00000032 682C            LDR              r4, [r5]
+   28 00000034 FB03 F304       MUL              r3, r3, r4
+   29 00000038 600B            STR              r3, [r1]
+   30 0000003A F101 0104       ADD              r1, #4
+   31 0000003E F106 0601       ADD              r6, #1
+   32 00000042 42B2            CMP              r2, r6
+   33 00000044         
+   34 00000044 D1E8            BNE              loop
+   35 00000046 BC70            POP              {r4, r5, r6}
+   36 00000048 4770            BX               lr
+   37 0000004A         
+   38 0000004A                 ENDP
+   39 0000004A         
+   40 0000004A                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
+interwork --depend=.\objects\add_mul.d -o.\objects\add_mul.o -IC:\Users\bohda\A
+ppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F
+4xx\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predef
+ine="__UVISION_VERSION SETA 533" --predefine="STM32F407xx SETA 1" --list=.\list
+ings\add_mul.lst add_mul.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+FUNCTION 00000000
+
+Symbol: FUNCTION
+   Definitions
+      At line 1 in file add_mul.s
+   Uses
+      None
+Comment: FUNCTION unused
+add_mul 00000000
+
+Symbol: add_mul
+   Definitions
+      At line 4 in file add_mul.s
+   Uses
+      At line 2 in file add_mul.s
+Comment: add_mul used once
+loop 00000018
+
+Symbol: loop
+   Definitions
+      At line 16 in file add_mul.s
+   Uses
+      At line 34 in file add_mul.s
+Comment: loop used once
+3 symbols
+337 symbols in table

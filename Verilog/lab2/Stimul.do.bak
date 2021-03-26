@@ -1,3 +1,0 @@
-force pin_name 2#0 0ns, 2#1 100ns;
-force pin_name1 2#0 0ns, 2#1 50ns, 2#0 100ns, 2#1 150ns;
-force pin_name2 2#1 0ns, 2#0 50ns, 2#1 150ns;

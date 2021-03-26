@@ -1,0 +1,372 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+vmult2in1
+Z0 !s110 1613991865
+!i10b 1
+!s100 A_iGHe7VU<TbZHgX`YT563
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IGjz`U3=1k`b3lUUW93gDz2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/Github/Third-course/Verilog 2sem/lab1
+w1613494227
+8D:/Github/Third-course/Verilog 2sem/lab1/mult2in1.v
+FD:/Github/Third-course/Verilog 2sem/lab1/mult2in1.v
+!i122 16
+Z4 L0 1 10
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1613991865.000000
+!s107 D:/Github/Third-course/Verilog 2sem/lab1/mult2in1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Github/Third-course/Verilog 2sem/lab1/mult2in1.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vmultiplexers
+Z9 !s110 1612977641
+!i10b 1
+!s100 kINYfnVhPa`BDjDIZNfYZ2
+R1
+IaMI^i]kW@A1?QmV2Q0AP?2
+R2
+R3
+w1612972877
+8multiplexers.v
+Fmultiplexers.v
+!i122 15
+Z10 L0 1 11
+R5
+r1
+!s85 0
+31
+Z11 !s108 1612977641.000000
+Z12 !s107 testb.v|multiplexers.v|
+Z13 !s90 -reportprogress|300|multiplexers.v|testb.v|
+!i113 1
+R8
+vmux2in1
+Z14 !s110 1614000838
+!i10b 1
+!s100 bIMAgMPRVLCBMe46GU@Q63
+R1
+Ia[<ge4<alZdmYS8hb7X7l2
+R2
+R3
+w1614000821
+8mux2in1.v
+Fmux2in1.v
+!i122 61
+R10
+R5
+r1
+!s85 0
+31
+Z15 !s108 1614000837.000000
+Z16 !s107 mux2in1_tb.v|mux2in1.v|
+Z17 !s90 -reportprogress|300|mux2in1.v|mux2in1_tb.v|
+!i113 1
+R8
+vmux2in1_tb
+R14
+!i10b 1
+!s100 4][35h9M@`n4eh;5UJlO40
+R1
+IS=T9nYOJeH`J=T2jR4HJ83
+R2
+R3
+w1613998676
+8mux2in1_tb.v
+Fmux2in1_tb.v
+!i122 61
+L0 3 31
+R5
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 1
+R8
+vpc
+Z18 !s110 1613999269
+!i10b 1
+!s100 SUNKB3e0ZgaNG;mY>nVUF3
+R1
+I@HgE;QcgoRez_f5EHbc3=0
+R2
+R3
+w1613998718
+8pc.v
+Fpc.v
+!i122 59
+L0 1 13
+R5
+r1
+!s85 0
+31
+Z19 !s108 1613999269.000000
+Z20 !s107 pc_tb.v|pc.v|
+Z21 !s90 -reportprogress|300|pc.v|pc_tb.v|
+!i113 1
+R8
+vpc_tb
+R18
+!i10b 1
+!s100 3V32=DN3^9OJWS_D1IZ8?0
+R1
+IhmL77H@R<VD1NjGYQkNli0
+R2
+R3
+w1613999252
+8pc_tb.v
+Fpc_tb.v
+!i122 59
+L0 3 32
+R5
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R8
+vregFile
+Z22 !s110 1614021166
+!i10b 1
+!s100 mh@honm?1nMcn:?D`^<ZP0
+R1
+ISQTl2iS8cXZAAJBi?@7KY0
+R2
+R3
+w1614014376
+8regFile.v
+FregFile.v
+!i122 77
+L0 1 31
+R5
+r1
+!s85 0
+31
+Z23 !s108 1614021166.000000
+!s107 regFile_tb.v|regFile.v|
+Z24 !s90 -reportprogress|300|regFile.v|regFile_tb.v|
+!i113 1
+R8
+nreg@file
+vregFile_tb
+R22
+!i10b 1
+!s100 UeC?aR3U7T1`B9k9MYZGS3
+R1
+IQ@6VPZngVKI7dzC2h_z<d3
+R2
+R3
+w1614021162
+8regFile_tb.v
+FregFile_tb.v
+!i122 77
+L0 3 62
+R5
+r1
+!s85 0
+31
+R23
+Z25 !s107 regFile_tb.v|regFile.v|
+R24
+!i113 1
+R8
+nreg@file_tb
+vshiftLeftBy2
+Z26 !s110 1613998033
+!i10b 1
+!s100 Td=:1[T[8dK]P83Li;`OK3
+R1
+IeOU=0ZZF6mIZAi0?j26nF2
+R2
+R3
+w1613998026
+8shiftLeftBy2.v
+FshiftLeftBy2.v
+!i122 57
+R4
+R5
+r1
+!s85 0
+31
+Z27 !s108 1613998033.000000
+Z28 !s107 shiftLeftBy2_tb.v|shiftLeftBy2.v|
+Z29 !s90 -reportprogress|300|shiftLeftBy2.v|shiftLeftBy2_tb.v|
+!i113 1
+R8
+nshift@left@by2
+vshiftLeftBy2_tb
+R26
+!i10b 1
+!s100 f0PTQBeX?UGJD^8X;OP3T2
+R1
+I3fc3QPbjND?YJgPEhbn:T0
+R2
+R3
+w1613998011
+8shiftLeftBy2_tb.v
+FshiftLeftBy2_tb.v
+!i122 57
+L0 3 19
+R5
+r1
+!s85 0
+31
+R27
+R28
+R29
+!i113 1
+R8
+nshift@left@by2_tb
+vshiftreg
+R0
+!i10b 1
+!s100 NZP>08obEn[S3n8j>Ma`a1
+R1
+I@zZB11Y_B0jHWRPIZIGd00
+R2
+R3
+w1613494475
+8D:/Github/Third-course/Verilog 2sem/lab1/shiftreg.v
+FD:/Github/Third-course/Verilog 2sem/lab1/shiftreg.v
+!i122 17
+Z30 L0 1 8
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Github/Third-course/Verilog 2sem/lab1/shiftreg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Github/Third-course/Verilog 2sem/lab1/shiftreg.v|
+!i113 1
+R7
+R8
+vsignext
+R0
+!i10b 1
+!s100 NU@:8h>5E@F106fKaXPe43
+R1
+IGbI>YBZeYO2j4X:RODe=Z1
+R2
+R3
+w1613496078
+8D:/Github/Third-course/Verilog 2sem/lab1/signext.v
+FD:/Github/Third-course/Verilog 2sem/lab1/signext.v
+!i122 18
+R30
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Github/Third-course/Verilog 2sem/lab1/signext.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Github/Third-course/Verilog 2sem/lab1/signext.v|
+!i113 1
+R7
+R8
+vsignExtend
+Z31 !s110 1614002366
+!i10b 1
+!s100 7`_NEbZEKhNW<X6HoD;de3
+R1
+I?F:5gZ;EC0zo_O7Pih2PV0
+R2
+R3
+w1614002210
+8signExtend.v
+FsignExtend.v
+!i122 65
+R30
+R5
+r1
+!s85 0
+31
+Z32 !s108 1614002366.000000
+Z33 !s107 signExtend_tb.v|signExtend.v|
+Z34 !s90 -reportprogress|300|signExtend.v|signExtend_tb.v|
+!i113 1
+R8
+nsign@extend
+vsignExtend_tb
+R31
+!i10b 1
+!s100 ?VlA:ocT=WLJ5cb9d>F1?0
+R1
+Ini09R:U7OE<k0zeeaDEiQ1
+R2
+R3
+w1614002355
+8signExtend_tb.v
+FsignExtend_tb.v
+!i122 65
+L0 3 25
+R5
+r1
+!s85 0
+31
+R32
+R33
+R34
+!i113 1
+R8
+nsign@extend_tb
+vtestb
+R9
+!i10b 1
+!s100 M_Kc^]TV4YhEV`KYMEb>Y1
+R1
+Ie=cVf_7[TPZIEYX?<Qm=^2
+R2
+R3
+w1612977626
+8testb.v
+Ftestb.v
+!i122 15
+L0 3 30
+R5
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 1
+R8
+vtestb1
+!s110 1612972762
+!i10b 1
+!s100 cK?7okO=ALF9=Rhh0oBbG1
+R1
+IlQcJWb@`gMe<Ql?0FUX7k0
+R2
+R3
+w1612972556
+8testb1.v
+Ftestb1.v
+!i122 10
+L0 3 36
+R5
+r1
+!s85 0
+31
+!s108 1612972762.000000
+!s107 testb1.v|multiplexers.v|
+!s90 -reportprogress|300|multiplexers.v|testb1.v|
+!i113 1
+R8

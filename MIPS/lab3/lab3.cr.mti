@@ -1,0 +1,99 @@
+D:/Github/Third-course/MIPS/lab3/mux2in1.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/mux2in1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux2in1
+
+Top level modules:
+	mux2in1
+
+} {} {}} D:/Github/Third-course/MIPS/lab3/signExtend.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/signExtend.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module signExtend
+
+Top level modules:
+	signExtend
+
+} {} {}} D:/Github/Third-course/MIPS/lab3/control.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module control
+
+Top level modules:
+	control
+
+} {} {}} D:/Github/Third-course/MIPS/lab3/nextPC.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/nextPC.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module nextPC
+
+Top level modules:
+	nextPC
+
+} {} {}} D:/Github/Third-course/MIPS/lab3/alu.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/alu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} D:/Github/Third-course/MIPS/lab3/pc.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/pc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} D:/Github/Third-course/MIPS/lab3/aluControl.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/aluControl.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module aluControl
+
+Top level modules:
+	aluControl
+
+} {} {}} D:/Github/Third-course/MIPS/lab3/tb_lab.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/tb_lab.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_lab
+
+Top level modules:
+	tb_lab
+
+} {} {}} D:/Github/Third-course/MIPS/lab3/main.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/main.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module main
+
+Top level modules:
+	main
+
+} {} {}} D:/Github/Third-course/MIPS/lab3/regFile.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/regFile.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module regFile
+
+Top level modules:
+	regFile
+
+} {} {}} D:/Github/Third-course/MIPS/lab3/shiftLeftBy2.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/shiftLeftBy2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module shiftLeftBy2
+
+Top level modules:
+	shiftLeftBy2
+
+} {} {}} D:/Github/Third-course/MIPS/lab3/rom.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/rom.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module rom
+
+Top level modules:
+	rom
+
+} {} {}} D:/Github/Third-course/MIPS/lab3/adder.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} D:/Github/Third-course/MIPS/lab3/ram.v {1 {vlog -work work -stats=none D:/Github/Third-course/MIPS/lab3/ram.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ram
+
+Top level modules:
+	ram
+
+} {} {}}

@@ -1,0 +1,144 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Github/Third-course/MIPS/lab2
+vadder
+Z1 !s110 1615398341
+!i10b 1
+!s100 Nn955L=QM]_aIh[H6KMj;1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+INKhPbhz6NXBgU@d?cJe<H0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1614529106
+8adder.v
+Fadder.v
+!i122 91
+L0 1 8
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1615398341.000000
+!s107 tb_lab.v|alu.v|aluControl.v|ram.v|rom.v|adder.v|
+Z6 !s90 -reportprogress|300|adder.v|rom.v|ram.v|aluControl.v|alu.v|tb_lab.v|
+!i113 1
+Z7 tCvgOpt 0
+valu
+R1
+!i10b 1
+!s100 Kbn1I_3^[QM^FO7_N>PfA1
+R2
+I9Cz<V;o75g@:8jEU6S6<d3
+R3
+R0
+w1614873011
+8alu.v
+Falu.v
+!i122 91
+L0 1 26
+R4
+r1
+!s85 0
+31
+R5
+Z8 !s107 tb_lab.v|alu.v|aluControl.v|ram.v|rom.v|adder.v|
+R6
+!i113 1
+R7
+valuControl
+R1
+!i10b 1
+!s100 Pf@KhHI9_5;?UAc95AFzn1
+R2
+IGJi=cTJJoA_`HDCc425P[1
+R3
+R0
+w1615027037
+8aluControl.v
+FaluControl.v
+!i122 91
+L0 1 27
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+nalu@control
+vram
+R1
+!i10b 1
+!s100 QB9cK>4<3ClVc0Sl>;iA41
+R2
+I:W__8zS6_V5Mk84^P^6k[2
+R3
+R0
+w1615032846
+8ram.v
+Fram.v
+!i122 91
+L0 1 21
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+vrom
+R1
+!i10b 1
+!s100 :^F7B;<KM=jf74o2E119M1
+R2
+ILMl^jKPPK=Rnh81a@n5Dc3
+R3
+R0
+w1615032844
+8rom.v
+From.v
+!i122 91
+L0 1 15
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+vtb_lab
+R1
+!i10b 1
+!s100 i@bh_Fz:ZCQN0iJ<JNYBU2
+R2
+IJ8573Q=JnI;=MkZXEP`nD0
+R3
+R0
+w1615398289
+8tb_lab.v
+Ftb_lab.v
+!i122 91
+L0 3 108
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7

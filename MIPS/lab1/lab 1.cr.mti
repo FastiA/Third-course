@@ -1,0 +1,15 @@
+{D:/Github/Third-course/Verilog 2sem/lab1/mux2in1.v} {1 {vlog -work work -stats=none {D:/Github/Third-course/Verilog 2sem/lab1/mux2in1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux2in1
+
+Top level modules:
+	mux2in1
+
+} {} {}} {D:/Github/Third-course/Verilog 2sem/lab1/mux2in1_tb.v} {1 {vlog -work work -stats=none {D:/Github/Third-course/Verilog 2sem/lab1/mux2in1_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux2in1_tb
+
+Top level modules:
+	mux2in1_tb
+
+} {} {}}

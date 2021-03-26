@@ -1,0 +1,73 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             FUNCTION, CODE, READONLY
+    2 00000000                 EXPORT           u_add
+    3 00000000         
+    4 00000000         u_add   PROC
+    5 00000000         
+    6 00000000 B470            PUSH             {r4, r5, r6}
+    7 00000002         
+    8 00000002 F04F 0400       MOV              r4, #0
+    9 00000006 F04F 0500       MOV              r5, #0
+   10 0000000A F04F 0600       MOV              r6, #0
+   11 0000000E         
+   12 0000000E         add_loop
+   13 0000000E 6803            LDR              r3, [r0]
+   14 00000010 18E4            ADDS             r4, r3
+   15 00000012 F145 0500       ADC              r5, #0
+   16 00000016 F100 0004       ADD              r0, #4
+   17 0000001A F106 0601       ADD              r6, #1
+   18 0000001E 428E            CMP              r6, r1
+   19 00000020 D1F5            BNE              add_loop
+   20 00000022         
+   21 00000022 4620            MOV              r0, r4
+   22 00000024 4629            MOV              r1, r5
+   23 00000026         
+   24 00000026 BC70            POP              {r4, r5, r6}
+   25 00000028 4770            BX               lr
+   26 0000002A         
+   27 0000002A                 ENDP
+   28 0000002A         
+   29 0000002A                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
+interwork --depend=.\objects\u_add.d -o.\objects\u_add.o -IC:\Users\bohda\AppDa
+ta\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\
+Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predefine=
+"__UVISION_VERSION SETA 533" --predefine="STM32F407xx SETA 1" --list=.\listings
+\u_add.lst zavd2\u_add.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+FUNCTION 00000000
+
+Symbol: FUNCTION
+   Definitions
+      At line 1 in file zavd2\u_add.s
+   Uses
+      None
+Comment: FUNCTION unused
+add_loop 0000000E
+
+Symbol: add_loop
+   Definitions
+      At line 12 in file zavd2\u_add.s
+   Uses
+      At line 19 in file zavd2\u_add.s
+Comment: add_loop used once
+u_add 00000000
+
+Symbol: u_add
+   Definitions
+      At line 4 in file zavd2\u_add.s
+   Uses
+      At line 2 in file zavd2\u_add.s
+Comment: u_add used once
+3 symbols
+337 symbols in table
